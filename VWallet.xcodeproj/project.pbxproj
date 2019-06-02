@@ -119,6 +119,56 @@
 		40BCC89D21C892A700400209 /* b64.c in Sources */ = {isa = PBXBuildFile; fileRef = 40BCC88F21C892A600400209 /* b64.c */; };
 		40BCC89E21C892A700400209 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 40BCC89021C892A600400209 /* sha256.c */; };
 		40BCC89F21C892A700400209 /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = 40BCC89121C892A600400209 /* crypto_scrypt-nosse.c */; };
+		DDA473EC22A3B3D2004726F9 /* Randomness.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA473E622A3B3D2004726F9 /* Randomness.m */; };
+		DDA473ED22A3B3D2004726F9 /* Ed25519.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA473E722A3B3D2004726F9 /* Ed25519.m */; };
+		DDA473EE22A3B3D2004726F9 /* Curve25519.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA473E822A3B3D2004726F9 /* Curve25519.m */; };
+		DDA4744322A3B3E2004726F9 /* ge_msub.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473F122A3B3E2004726F9 /* ge_msub.c */; };
+		DDA4744422A3B3E2004726F9 /* fe_sq2.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473F222A3B3E2004726F9 /* fe_sq2.c */; };
+		DDA4744622A3B3E2004726F9 /* sha2big.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473F722A3B3E2004726F9 /* sha2big.c */; };
+		DDA4744722A3B3E2004726F9 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDA473F922A3B3E2004726F9 /* LICENSE.txt */; };
+		DDA4744822A3B3E2004726F9 /* fe_pow22523.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473FA22A3B3E2004726F9 /* fe_pow22523.c */; };
+		DDA4744922A3B3E2004726F9 /* ge_madd.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473FB22A3B3E2004726F9 /* ge_madd.c */; };
+		DDA4744A22A3B3E2004726F9 /* ge_p3_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473FC22A3B3E2004726F9 /* ge_p3_tobytes.c */; };
+		DDA4744B22A3B3E2004726F9 /* ge_p3_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473FD22A3B3E2004726F9 /* ge_p3_dbl.c */; };
+		DDA4744C22A3B3E2004726F9 /* sc_muladd.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473FE22A3B3E2004726F9 /* sc_muladd.c */; };
+		DDA4744D22A3B3E2004726F9 /* fe_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA473FF22A3B3E2004726F9 /* fe_sub.c */; };
+		DDA4744E22A3B3E2004726F9 /* fe_isnonzero.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740122A3B3E2004726F9 /* fe_isnonzero.c */; };
+		DDA4744F22A3B3E2004726F9 /* fe_add.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740322A3B3E2004726F9 /* fe_add.c */; };
+		DDA4745022A3B3E2004726F9 /* ge_p1p1_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740522A3B3E2004726F9 /* ge_p1p1_to_p2.c */; };
+		DDA4745122A3B3E2004726F9 /* fe_invert.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740622A3B3E2004726F9 /* fe_invert.c */; };
+		DDA4745222A3B3E2004726F9 /* ge_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740722A3B3E2004726F9 /* ge_tobytes.c */; };
+		DDA4745322A3B3E2004726F9 /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740A22A3B3E2004726F9 /* compare.c */; };
+		DDA4745422A3B3E2004726F9 /* curve_sigs.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740C22A3B3E2004726F9 /* curve_sigs.c */; };
+		DDA4745522A3B3E2004726F9 /* sign_modified.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740D22A3B3E2004726F9 /* sign_modified.c */; };
+		DDA4745622A3B3E2004726F9 /* zeroize.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4740F22A3B3E2004726F9 /* zeroize.c */; };
+		DDA4745722A3B3E2004726F9 /* ge_p2_0.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741122A3B3E2004726F9 /* ge_p2_0.c */; };
+		DDA4745822A3B3E2004726F9 /* ge_p3_0.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741222A3B3E2004726F9 /* ge_p3_0.c */; };
+		DDA4745922A3B3E2004726F9 /* fe_cmov.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741322A3B3E2004726F9 /* fe_cmov.c */; };
+		DDA4745A22A3B3E2004726F9 /* ge_p2_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741422A3B3E2004726F9 /* ge_p2_dbl.c */; };
+		DDA4745B22A3B3E2004726F9 /* fe_1.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741522A3B3E2004726F9 /* fe_1.c */; };
+		DDA4745C22A3B3E2004726F9 /* fe_copy.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741622A3B3E2004726F9 /* fe_copy.c */; };
+		DDA4745D22A3B3E2004726F9 /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741722A3B3E2004726F9 /* sign.c */; };
+		DDA4745E22A3B3E2004726F9 /* fe_0.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741A22A3B3E2004726F9 /* fe_0.c */; };
+		DDA4745F22A3B3E2004726F9 /* fe_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741D22A3B3E2004726F9 /* fe_tobytes.c */; };
+		DDA4746022A3B3E2004726F9 /* ge_p3_to_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741E22A3B3E2004726F9 /* ge_p3_to_cached.c */; };
+		DDA4746122A3B3E2004726F9 /* ge_add.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4741F22A3B3E2004726F9 /* ge_add.c */; };
+		DDA4746222A3B3E2004726F9 /* fe_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742022A3B3E2004726F9 /* fe_neg.c */; };
+		DDA4746322A3B3E2004726F9 /* ge_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742122A3B3E2004726F9 /* ge_sub.c */; };
+		DDA4746422A3B3E2004726F9 /* ge_scalarmult_base.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742222A3B3E2004726F9 /* ge_scalarmult_base.c */; };
+		DDA4746522A3B3E2004726F9 /* ge_double_scalarmult.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742422A3B3E2004726F9 /* ge_double_scalarmult.c */; };
+		DDA4746622A3B3E2004726F9 /* ge_precomp_0.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742522A3B3E2004726F9 /* ge_precomp_0.c */; };
+		DDA4746722A3B3E2004726F9 /* fe_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742622A3B3E2004726F9 /* fe_frombytes.c */; };
+		DDA4746822A3B3E2004726F9 /* fe_isnegative.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742822A3B3E2004726F9 /* fe_isnegative.c */; };
+		DDA4746922A3B3E2004726F9 /* ge_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742B22A3B3E2004726F9 /* ge_frombytes.c */; };
+		DDA4746A22A3B3E2004726F9 /* fe_sq.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4742C22A3B3E2004726F9 /* fe_sq.c */; };
+		DDA4746B22A3B3E2004726F9 /* open.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4743722A3B3E2004726F9 /* open.c */; };
+		DDA4746C22A3B3E2004726F9 /* sc_reduce.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4743822A3B3E2004726F9 /* sc_reduce.c */; };
+		DDA4746D22A3B3E2004726F9 /* ge_p1p1_to_p3.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4743922A3B3E2004726F9 /* ge_p1p1_to_p3.c */; };
+		DDA4746E22A3B3E2004726F9 /* fe_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4743A22A3B3E2004726F9 /* fe_mul.c */; };
+		DDA4746F22A3B3E2004726F9 /* ge_p3_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4743D22A3B3E2004726F9 /* ge_p3_to_p2.c */; };
+		DDA4747022A3B3E2004726F9 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4743F22A3B3E2004726F9 /* blocks.c */; };
+		DDA4747122A3B3E2004726F9 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4744022A3B3E2004726F9 /* hash.c */; };
+		DDA4747222A3B3E2004726F9 /* curve25519-donna.c in Sources */ = {isa = PBXBuildFile; fileRef = DDA4744222A3B3E2004726F9 /* curve25519-donna.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -315,6 +365,89 @@
 		5F126AF60D480F54113500DF /* libPods-VeeWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VeeWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E2FDEC13EF8FF31A582D6E /* libPods-VWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7756EDB95079BE788F11EA19 /* Pods-VWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VWallet/Pods-VWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		DDA473E622A3B3D2004726F9 /* Randomness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Randomness.m; sourceTree = "<group>"; };
+		DDA473E722A3B3D2004726F9 /* Ed25519.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ed25519.m; sourceTree = "<group>"; };
+		DDA473E822A3B3D2004726F9 /* Curve25519.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Curve25519.m; sourceTree = "<group>"; };
+		DDA473E922A3B3D2004726F9 /* Randomness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Randomness.h; sourceTree = "<group>"; };
+		DDA473EA22A3B3D2004726F9 /* Ed25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ed25519.h; sourceTree = "<group>"; };
+		DDA473EB22A3B3D2004726F9 /* Curve25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Curve25519.h; sourceTree = "<group>"; };
+		DDA473F122A3B3E2004726F9 /* ge_msub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_msub.c; sourceTree = "<group>"; };
+		DDA473F222A3B3E2004726F9 /* fe_sq2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_sq2.c; sourceTree = "<group>"; };
+		DDA473F322A3B3E2004726F9 /* sqrtm1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqrtm1.h; sourceTree = "<group>"; };
+		DDA473F522A3B3E2004726F9 /* md_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md_helper.c; sourceTree = "<group>"; };
+		DDA473F622A3B3E2004726F9 /* sph_sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_sha2.h; sourceTree = "<group>"; };
+		DDA473F722A3B3E2004726F9 /* sha2big.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2big.c; sourceTree = "<group>"; };
+		DDA473F822A3B3E2004726F9 /* sph_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sph_types.h; sourceTree = "<group>"; };
+		DDA473F922A3B3E2004726F9 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		DDA473FA22A3B3E2004726F9 /* fe_pow22523.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_pow22523.c; sourceTree = "<group>"; };
+		DDA473FB22A3B3E2004726F9 /* ge_madd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_madd.c; sourceTree = "<group>"; };
+		DDA473FC22A3B3E2004726F9 /* ge_p3_tobytes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p3_tobytes.c; sourceTree = "<group>"; };
+		DDA473FD22A3B3E2004726F9 /* ge_p3_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p3_dbl.c; sourceTree = "<group>"; };
+		DDA473FE22A3B3E2004726F9 /* sc_muladd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sc_muladd.c; sourceTree = "<group>"; };
+		DDA473FF22A3B3E2004726F9 /* fe_sub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_sub.c; sourceTree = "<group>"; };
+		DDA4740022A3B3E2004726F9 /* ge_sub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge_sub.h; sourceTree = "<group>"; };
+		DDA4740122A3B3E2004726F9 /* fe_isnonzero.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_isnonzero.c; sourceTree = "<group>"; };
+		DDA4740222A3B3E2004726F9 /* pow225521.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow225521.h; sourceTree = "<group>"; };
+		DDA4740322A3B3E2004726F9 /* fe_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_add.c; sourceTree = "<group>"; };
+		DDA4740422A3B3E2004726F9 /* ge_add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge_add.h; sourceTree = "<group>"; };
+		DDA4740522A3B3E2004726F9 /* ge_p1p1_to_p2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p1p1_to_p2.c; sourceTree = "<group>"; };
+		DDA4740622A3B3E2004726F9 /* fe_invert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_invert.c; sourceTree = "<group>"; };
+		DDA4740722A3B3E2004726F9 /* ge_tobytes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_tobytes.c; sourceTree = "<group>"; };
+		DDA4740922A3B3E2004726F9 /* zeroize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeroize.h; sourceTree = "<group>"; };
+		DDA4740A22A3B3E2004726F9 /* compare.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compare.c; sourceTree = "<group>"; };
+		DDA4740B22A3B3E2004726F9 /* crypto_hash_sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_hash_sha512.h; sourceTree = "<group>"; };
+		DDA4740C22A3B3E2004726F9 /* curve_sigs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = curve_sigs.c; sourceTree = "<group>"; };
+		DDA4740D22A3B3E2004726F9 /* sign_modified.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sign_modified.c; sourceTree = "<group>"; };
+		DDA4740E22A3B3E2004726F9 /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
+		DDA4740F22A3B3E2004726F9 /* zeroize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zeroize.c; sourceTree = "<group>"; };
+		DDA4741022A3B3E2004726F9 /* curve_sigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curve_sigs.h; sourceTree = "<group>"; };
+		DDA4741122A3B3E2004726F9 /* ge_p2_0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p2_0.c; sourceTree = "<group>"; };
+		DDA4741222A3B3E2004726F9 /* ge_p3_0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p3_0.c; sourceTree = "<group>"; };
+		DDA4741322A3B3E2004726F9 /* fe_cmov.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_cmov.c; sourceTree = "<group>"; };
+		DDA4741422A3B3E2004726F9 /* ge_p2_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p2_dbl.c; sourceTree = "<group>"; };
+		DDA4741522A3B3E2004726F9 /* fe_1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_1.c; sourceTree = "<group>"; };
+		DDA4741622A3B3E2004726F9 /* fe_copy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_copy.c; sourceTree = "<group>"; };
+		DDA4741722A3B3E2004726F9 /* sign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
+		DDA4741822A3B3E2004726F9 /* d2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = d2.h; sourceTree = "<group>"; };
+		DDA4741922A3B3E2004726F9 /* api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = api.h; sourceTree = "<group>"; };
+		DDA4741A22A3B3E2004726F9 /* fe_0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_0.c; sourceTree = "<group>"; };
+		DDA4741B22A3B3E2004726F9 /* ge_madd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge_madd.h; sourceTree = "<group>"; };
+		DDA4741C22A3B3E2004726F9 /* ge_msub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge_msub.h; sourceTree = "<group>"; };
+		DDA4741D22A3B3E2004726F9 /* fe_tobytes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_tobytes.c; sourceTree = "<group>"; };
+		DDA4741E22A3B3E2004726F9 /* ge_p3_to_cached.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p3_to_cached.c; sourceTree = "<group>"; };
+		DDA4741F22A3B3E2004726F9 /* ge_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_add.c; sourceTree = "<group>"; };
+		DDA4742022A3B3E2004726F9 /* fe_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_neg.c; sourceTree = "<group>"; };
+		DDA4742122A3B3E2004726F9 /* ge_sub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_sub.c; sourceTree = "<group>"; };
+		DDA4742222A3B3E2004726F9 /* ge_scalarmult_base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_scalarmult_base.c; sourceTree = "<group>"; };
+		DDA4742322A3B3E2004726F9 /* fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fe.h; sourceTree = "<group>"; };
+		DDA4742422A3B3E2004726F9 /* ge_double_scalarmult.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_double_scalarmult.c; sourceTree = "<group>"; };
+		DDA4742522A3B3E2004726F9 /* ge_precomp_0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_precomp_0.c; sourceTree = "<group>"; };
+		DDA4742622A3B3E2004726F9 /* fe_frombytes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_frombytes.c; sourceTree = "<group>"; };
+		DDA4742722A3B3E2004726F9 /* pow22523.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow22523.h; sourceTree = "<group>"; };
+		DDA4742822A3B3E2004726F9 /* fe_isnegative.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_isnegative.c; sourceTree = "<group>"; };
+		DDA4742922A3B3E2004726F9 /* ge_p2_dbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge_p2_dbl.h; sourceTree = "<group>"; };
+		DDA4742A22A3B3E2004726F9 /* d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = d.h; sourceTree = "<group>"; };
+		DDA4742B22A3B3E2004726F9 /* ge_frombytes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_frombytes.c; sourceTree = "<group>"; };
+		DDA4742C22A3B3E2004726F9 /* fe_sq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_sq.c; sourceTree = "<group>"; };
+		DDA4742D22A3B3E2004726F9 /* sc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sc.h; sourceTree = "<group>"; };
+		DDA4742E22A3B3E2004726F9 /* ge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge.h; sourceTree = "<group>"; };
+		DDA4743022A3B3E2004726F9 /* crypto_uint32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_uint32.h; sourceTree = "<group>"; };
+		DDA4743122A3B3E2004726F9 /* crypto_int32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_int32.h; sourceTree = "<group>"; };
+		DDA4743222A3B3E2004726F9 /* crypto_sign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_sign.h; sourceTree = "<group>"; };
+		DDA4743322A3B3E2004726F9 /* crypto_verify_32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_verify_32.h; sourceTree = "<group>"; };
+		DDA4743422A3B3E2004726F9 /* crypto_int64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_int64.h; sourceTree = "<group>"; };
+		DDA4743522A3B3E2004726F9 /* crypto_uint64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_uint64.h; sourceTree = "<group>"; };
+		DDA4743622A3B3E2004726F9 /* crypto_sign_edwards25519sha512batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_sign_edwards25519sha512batch.h; sourceTree = "<group>"; };
+		DDA4743722A3B3E2004726F9 /* open.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = open.c; sourceTree = "<group>"; };
+		DDA4743822A3B3E2004726F9 /* sc_reduce.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sc_reduce.c; sourceTree = "<group>"; };
+		DDA4743922A3B3E2004726F9 /* ge_p1p1_to_p3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p1p1_to_p3.c; sourceTree = "<group>"; };
+		DDA4743A22A3B3E2004726F9 /* fe_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe_mul.c; sourceTree = "<group>"; };
+		DDA4743B22A3B3E2004726F9 /* base2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base2.h; sourceTree = "<group>"; };
+		DDA4743C22A3B3E2004726F9 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		DDA4743D22A3B3E2004726F9 /* ge_p3_to_p2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge_p3_to_p2.c; sourceTree = "<group>"; };
+		DDA4743F22A3B3E2004726F9 /* blocks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blocks.c; sourceTree = "<group>"; };
+		DDA4744022A3B3E2004726F9 /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
+		DDA4744222A3B3E2004726F9 /* curve25519-donna.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "curve25519-donna.c"; sourceTree = "<group>"; };
 		E6BBE3D51D60ACBB9EEFDFA9 /* Pods-VeeWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeeWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeeWallet/Pods-VeeWallet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1187,6 +1320,8 @@
 		40BF3E2E219EAF90000B1437 = {
 			isa = PBXGroup;
 			children = (
+				DDA473EF22A3B3E2004726F9 /* Sources */,
+				DDA473E522A3B3D2004726F9 /* Classes */,
 				40BCC87E21C892A600400209 /* Vendors */,
 				40611C1A21BA5DA100D67CE7 /* Common */,
 				40611B3321BA5DA000D67CE7 /* VWallet */,
@@ -1214,6 +1349,151 @@
 				44C8400F105584F7038EB733 /* Pods-VWallet.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDA473E522A3B3D2004726F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DDA473E622A3B3D2004726F9 /* Randomness.m */,
+				DDA473E722A3B3D2004726F9 /* Ed25519.m */,
+				DDA473E822A3B3D2004726F9 /* Curve25519.m */,
+				DDA473E922A3B3D2004726F9 /* Randomness.h */,
+				DDA473EA22A3B3D2004726F9 /* Ed25519.h */,
+				DDA473EB22A3B3D2004726F9 /* Curve25519.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DDA473EF22A3B3E2004726F9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DDA473F022A3B3E2004726F9 /* ed25519 */,
+				DDA4744122A3B3E2004726F9 /* Curve25519 */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DDA473F022A3B3E2004726F9 /* ed25519 */ = {
+			isa = PBXGroup;
+			children = (
+				DDA473F122A3B3E2004726F9 /* ge_msub.c */,
+				DDA473F222A3B3E2004726F9 /* fe_sq2.c */,
+				DDA473F322A3B3E2004726F9 /* sqrtm1.h */,
+				DDA473F422A3B3E2004726F9 /* sha512 */,
+				DDA473FA22A3B3E2004726F9 /* fe_pow22523.c */,
+				DDA473FB22A3B3E2004726F9 /* ge_madd.c */,
+				DDA473FC22A3B3E2004726F9 /* ge_p3_tobytes.c */,
+				DDA473FD22A3B3E2004726F9 /* ge_p3_dbl.c */,
+				DDA473FE22A3B3E2004726F9 /* sc_muladd.c */,
+				DDA473FF22A3B3E2004726F9 /* fe_sub.c */,
+				DDA4740022A3B3E2004726F9 /* ge_sub.h */,
+				DDA4740122A3B3E2004726F9 /* fe_isnonzero.c */,
+				DDA4740222A3B3E2004726F9 /* pow225521.h */,
+				DDA4740322A3B3E2004726F9 /* fe_add.c */,
+				DDA4740422A3B3E2004726F9 /* ge_add.h */,
+				DDA4740522A3B3E2004726F9 /* ge_p1p1_to_p2.c */,
+				DDA4740622A3B3E2004726F9 /* fe_invert.c */,
+				DDA4740722A3B3E2004726F9 /* ge_tobytes.c */,
+				DDA4740822A3B3E2004726F9 /* additions */,
+				DDA4741122A3B3E2004726F9 /* ge_p2_0.c */,
+				DDA4741222A3B3E2004726F9 /* ge_p3_0.c */,
+				DDA4741322A3B3E2004726F9 /* fe_cmov.c */,
+				DDA4741422A3B3E2004726F9 /* ge_p2_dbl.c */,
+				DDA4741522A3B3E2004726F9 /* fe_1.c */,
+				DDA4741622A3B3E2004726F9 /* fe_copy.c */,
+				DDA4741722A3B3E2004726F9 /* sign.c */,
+				DDA4741822A3B3E2004726F9 /* d2.h */,
+				DDA4741922A3B3E2004726F9 /* api.h */,
+				DDA4741A22A3B3E2004726F9 /* fe_0.c */,
+				DDA4741B22A3B3E2004726F9 /* ge_madd.h */,
+				DDA4741C22A3B3E2004726F9 /* ge_msub.h */,
+				DDA4741D22A3B3E2004726F9 /* fe_tobytes.c */,
+				DDA4741E22A3B3E2004726F9 /* ge_p3_to_cached.c */,
+				DDA4741F22A3B3E2004726F9 /* ge_add.c */,
+				DDA4742022A3B3E2004726F9 /* fe_neg.c */,
+				DDA4742122A3B3E2004726F9 /* ge_sub.c */,
+				DDA4742222A3B3E2004726F9 /* ge_scalarmult_base.c */,
+				DDA4742322A3B3E2004726F9 /* fe.h */,
+				DDA4742422A3B3E2004726F9 /* ge_double_scalarmult.c */,
+				DDA4742522A3B3E2004726F9 /* ge_precomp_0.c */,
+				DDA4742622A3B3E2004726F9 /* fe_frombytes.c */,
+				DDA4742722A3B3E2004726F9 /* pow22523.h */,
+				DDA4742822A3B3E2004726F9 /* fe_isnegative.c */,
+				DDA4742922A3B3E2004726F9 /* ge_p2_dbl.h */,
+				DDA4742A22A3B3E2004726F9 /* d.h */,
+				DDA4742B22A3B3E2004726F9 /* ge_frombytes.c */,
+				DDA4742C22A3B3E2004726F9 /* fe_sq.c */,
+				DDA4742D22A3B3E2004726F9 /* sc.h */,
+				DDA4742E22A3B3E2004726F9 /* ge.h */,
+				DDA4742F22A3B3E2004726F9 /* nacl_includes */,
+				DDA4743722A3B3E2004726F9 /* open.c */,
+				DDA4743822A3B3E2004726F9 /* sc_reduce.c */,
+				DDA4743922A3B3E2004726F9 /* ge_p1p1_to_p3.c */,
+				DDA4743A22A3B3E2004726F9 /* fe_mul.c */,
+				DDA4743B22A3B3E2004726F9 /* base2.h */,
+				DDA4743C22A3B3E2004726F9 /* base.h */,
+				DDA4743D22A3B3E2004726F9 /* ge_p3_to_p2.c */,
+				DDA4743E22A3B3E2004726F9 /* nacl_sha512 */,
+			);
+			path = ed25519;
+			sourceTree = "<group>";
+		};
+		DDA473F422A3B3E2004726F9 /* sha512 */ = {
+			isa = PBXGroup;
+			children = (
+				DDA473F522A3B3E2004726F9 /* md_helper.c */,
+				DDA473F622A3B3E2004726F9 /* sph_sha2.h */,
+				DDA473F722A3B3E2004726F9 /* sha2big.c */,
+				DDA473F822A3B3E2004726F9 /* sph_types.h */,
+				DDA473F922A3B3E2004726F9 /* LICENSE.txt */,
+			);
+			path = sha512;
+			sourceTree = "<group>";
+		};
+		DDA4740822A3B3E2004726F9 /* additions */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4740922A3B3E2004726F9 /* zeroize.h */,
+				DDA4740A22A3B3E2004726F9 /* compare.c */,
+				DDA4740B22A3B3E2004726F9 /* crypto_hash_sha512.h */,
+				DDA4740C22A3B3E2004726F9 /* curve_sigs.c */,
+				DDA4740D22A3B3E2004726F9 /* sign_modified.c */,
+				DDA4740E22A3B3E2004726F9 /* compare.h */,
+				DDA4740F22A3B3E2004726F9 /* zeroize.c */,
+				DDA4741022A3B3E2004726F9 /* curve_sigs.h */,
+			);
+			path = additions;
+			sourceTree = "<group>";
+		};
+		DDA4742F22A3B3E2004726F9 /* nacl_includes */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4743022A3B3E2004726F9 /* crypto_uint32.h */,
+				DDA4743122A3B3E2004726F9 /* crypto_int32.h */,
+				DDA4743222A3B3E2004726F9 /* crypto_sign.h */,
+				DDA4743322A3B3E2004726F9 /* crypto_verify_32.h */,
+				DDA4743422A3B3E2004726F9 /* crypto_int64.h */,
+				DDA4743522A3B3E2004726F9 /* crypto_uint64.h */,
+				DDA4743622A3B3E2004726F9 /* crypto_sign_edwards25519sha512batch.h */,
+			);
+			path = nacl_includes;
+			sourceTree = "<group>";
+		};
+		DDA4743E22A3B3E2004726F9 /* nacl_sha512 */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4743F22A3B3E2004726F9 /* blocks.c */,
+				DDA4744022A3B3E2004726F9 /* hash.c */,
+			);
+			path = nacl_sha512;
+			sourceTree = "<group>";
+		};
+		DDA4744122A3B3E2004726F9 /* Curve25519 */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4744222A3B3E2004726F9 /* curve25519-donna.c */,
+			);
+			path = Curve25519;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1290,6 +1570,7 @@
 				40611C7521BA5DA100D67CE7 /* Wallet.storyboard in Resources */,
 				40611C6A21BA5DA100D67CE7 /* MnemonicWordBackupViewController.xib in Resources */,
 				40611C4021BA5DA100D67CE7 /* InfoPlist.strings in Resources */,
+				DDA4744722A3B3E2004726F9 /* LICENSE.txt in Resources */,
 				40611C5821BA5DA100D67CE7 /* NetworkTableViewCell.xib in Resources */,
 				40611C8021BA5DA100D67CE7 /* AlertViewController.xib in Resources */,
 				40611C7A21BA5DA100D67CE7 /* AccountQRPreviewViewController.xib in Resources */,
@@ -1325,7 +1606,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VWallet/Pods-VWallet-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-VWallet/Pods-VWallet-frameworks.sh",
 				"${PODS_ROOT}/Reveal-SDK/RevealServer-13/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1336,7 +1617,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VWallet/Pods-VWallet-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VWallet/Pods-VWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		79298A864DA79790590FB2D3 /* [CP] Check Pods Manifest.lock */ = {
@@ -1369,7 +1650,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VWallet/Pods-VWallet-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-VWallet/Pods-VWallet-resources.sh",
 				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1380,7 +1661,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VWallet/Pods-VWallet-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VWallet/Pods-VWallet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1390,46 +1671,78 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA4746F22A3B3E2004726F9 /* ge_p3_to_p2.c in Sources */,
 				40BCC89621C892A700400209 /* Makefile in Sources */,
+				DDA4745722A3B3E2004726F9 /* ge_p2_0.c in Sources */,
+				DDA4744B22A3B3E2004726F9 /* ge_p3_dbl.c in Sources */,
 				40611C8E21BA5DA100D67CE7 /* MediaManager.m in Sources */,
 				40611C4E21BA5DA100D67CE7 /* SwitchTableViewCell.m in Sources */,
 				40611C9221BA5DA100D67CE7 /* QRScannerMaskView.m in Sources */,
+				DDA4746322A3B3E2004726F9 /* ge_sub.c in Sources */,
 				40611C8921BA5DA100D67CE7 /* ThemeButton.m in Sources */,
+				DDA4744F22A3B3E2004726F9 /* fe_add.c in Sources */,
+				DDA473EE22A3B3D2004726F9 /* Curve25519.m in Sources */,
 				40611C7321BA5DA100D67CE7 /* TradeVerifyQRPreviewViewController.m in Sources */,
+				DDA4745322A3B3E2004726F9 /* compare.c in Sources */,
 				40611C4F21BA5DA100D67CE7 /* NormalTableViewCell.m in Sources */,
 				40611C9321BA5DA100D67CE7 /* QRScanner.m in Sources */,
+				DDA4746622A3B3E2004726F9 /* ge_precomp_0.c in Sources */,
 				40611C7921BA5DA100D67CE7 /* AccountQRPreviewViewController.m in Sources */,
+				DDA473ED22A3B3D2004726F9 /* Ed25519.m in Sources */,
 				40611C4C21BA5DA100D67CE7 /* ArrowTableViewCell.m in Sources */,
+				DDA4744E22A3B3E2004726F9 /* fe_isnonzero.c in Sources */,
 				40611C6221BA5DA100D67CE7 /* ResultParameter.m in Sources */,
+				DDA4745622A3B3E2004726F9 /* zeroize.c in Sources */,
+				DDA4747022A3B3E2004726F9 /* blocks.c in Sources */,
 				40611C3521BA5DA100D67CE7 /* UIImage+QRCode.m in Sources */,
+				DDA4746E22A3B3E2004726F9 /* fe_mul.c in Sources */,
 				40BCC89321C892A600400209 /* crypto_scrypt-hash.c in Sources */,
 				40611C8F21BA5DA100D67CE7 /* NetworkTool.m in Sources */,
 				40611C6521BA5DA100D67CE7 /* InitViewController.m in Sources */,
 				40611C7B21BA5DA100D67CE7 /* QRScannerViewController.m in Sources */,
 				40611C5421BA5DA100D67CE7 /* MonitorViewController.m in Sources */,
+				DDA4744922A3B3E2004726F9 /* ge_madd.c in Sources */,
 				40611C8721BA5DA100D67CE7 /* ThemeLabel.m in Sources */,
 				40611C7621BA5DA100D67CE7 /* AccountTableViewController.m in Sources */,
 				40611C3721BA5DA100D67CE7 /* UIColor+Hex.m in Sources */,
+				DDA4745122A3B3E2004726F9 /* fe_invert.c in Sources */,
 				40611C8221BA5DA100D67CE7 /* VColor.m in Sources */,
+				DDA4745522A3B3E2004726F9 /* sign_modified.c in Sources */,
+				DDA4746422A3B3E2004726F9 /* ge_scalarmult_base.c in Sources */,
+				DDA4745022A3B3E2004726F9 /* ge_p1p1_to_p2.c in Sources */,
+				DDA4746922A3B3E2004726F9 /* ge_frombytes.c in Sources */,
 				40611C6821BA5DA100D67CE7 /* MnemonicWordImportViewController.m in Sources */,
 				40611C4921BA5DA100D67CE7 /* AppDelegate.m in Sources */,
 				40611C4621BA5DA100D67CE7 /* CellItem.m in Sources */,
 				40BCC87D21C88C1700400209 /* Scrypt.m in Sources */,
+				DDA473EC22A3B3D2004726F9 /* Randomness.m in Sources */,
+				DDA4744322A3B3E2004726F9 /* ge_msub.c in Sources */,
 				40611C8421BA5DA100D67CE7 /* TabBarController.m in Sources */,
 				40BCC89821C892A700400209 /* crypto-scrypt-saltgen.c in Sources */,
 				40611C3321BA5DA100D67CE7 /* WalletMgr.m in Sources */,
+				DDA4745822A3B3E2004726F9 /* ge_p3_0.c in Sources */,
 				40611C7821BA5DA100D67CE7 /* AccountTableViewCell.m in Sources */,
+				DDA4746222A3B3E2004726F9 /* fe_neg.c in Sources */,
+				DDA4745B22A3B3E2004726F9 /* fe_1.c in Sources */,
 				40611C7021BA5DA100D67CE7 /* TradeConfirmTableViewController.m in Sources */,
 				40611C7221BA5DA100D67CE7 /* TradeInfoTableViewCell.m in Sources */,
 				40BCC89521C892A700400209 /* slowequals.c in Sources */,
 				40611C6321BA5DA100D67CE7 /* ResultViewController.m in Sources */,
 				40611C8521BA5DA100D67CE7 /* SeparatorLine.m in Sources */,
 				40611C3A21BA5DA100D67CE7 /* UIViewController+Alert.m in Sources */,
+				DDA4746C22A3B3E2004726F9 /* sc_reduce.c in Sources */,
+				DDA4746522A3B3E2004726F9 /* ge_double_scalarmult.c in Sources */,
+				DDA4746A22A3B3E2004726F9 /* fe_sq.c in Sources */,
+				DDA4744D22A3B3E2004726F9 /* fe_sub.c in Sources */,
+				DDA4744A22A3B3E2004726F9 /* ge_p3_tobytes.c in Sources */,
 				40611C3421BA5DA100D67CE7 /* UIImage+Color.m in Sources */,
+				DDA4745E22A3B3E2004726F9 /* fe_0.c in Sources */,
 				40BCC89921C892A700400209 /* crypto_scrypt-hexconvert.c in Sources */,
 				40BCC89C21C892A700400209 /* crypto_scrypt-check.c in Sources */,
 				40611C5121BA5DA100D67CE7 /* SettingsTableViewController.m in Sources */,
+				DDA4744822A3B3E2004726F9 /* fe_pow22523.c in Sources */,
 				40611C3921BA5DA100D67CE7 /* UIView+IB.m in Sources */,
+				DDA4746022A3B3E2004726F9 /* ge_p3_to_cached.c in Sources */,
 				40BCC89E21C892A700400209 /* sha256.c in Sources */,
 				40611C6B21BA5DA100D67CE7 /* MnemonicWordCheckViewController.m in Sources */,
 				40611C3621BA5DA100D67CE7 /* UILabel+IB.m in Sources */,
@@ -1437,6 +1750,8 @@
 				40611C6121BA5DA100D67CE7 /* PasswordSettingsViewController.m in Sources */,
 				40611C7E21BA5DA100D67CE7 /* PasswordAuthAlertViewController.m in Sources */,
 				40611C7D21BA5DA100D67CE7 /* WindowManager.m in Sources */,
+				DDA4747122A3B3E2004726F9 /* hash.c in Sources */,
+				DDA4745922A3B3E2004726F9 /* fe_cmov.c in Sources */,
 				40611C7C21BA5DA100D67CE7 /* VTransaction+Extension.m in Sources */,
 				40611C8A21BA5DA100D67CE7 /* ThemeView.m in Sources */,
 				40611C8821BA5DA100D67CE7 /* ThemeTextField.m in Sources */,
@@ -1445,27 +1760,42 @@
 				40611C3B21BA5DA100D67CE7 /* UITextView+Placeholder.m in Sources */,
 				40611C3821BA5DA100D67CE7 /* UIView+Loading.m in Sources */,
 				40611C6921BA5DA100D67CE7 /* MnemonicWordBackupViewController.m in Sources */,
+				DDA4744C22A3B3E2004726F9 /* sc_muladd.c in Sources */,
 				40611C4521BA5DA100D67CE7 /* DeviceState.m in Sources */,
 				40611C4821BA5DA100D67CE7 /* AppDelegate+DismissKeyboard.m in Sources */,
+				DDA4745C22A3B3E2004726F9 /* fe_copy.c in Sources */,
 				40611C3D21BA5DA100D67CE7 /* NSString+Asterisk.m in Sources */,
 				40611C5721BA5DA100D67CE7 /* NetworkTableViewCell.m in Sources */,
+				DDA4745F22A3B3E2004726F9 /* fe_tobytes.c in Sources */,
 				40611C4721BA5DA100D67CE7 /* SectionItem.m in Sources */,
+				DDA4746B22A3B3E2004726F9 /* open.c in Sources */,
 				40611C8B21BA5DA100D67CE7 /* VStoryboard.m in Sources */,
 				40611C5F21BA5DA100D67CE7 /* LevelBar.m in Sources */,
+				DDA4745D22A3B3E2004726F9 /* sign.c in Sources */,
 				40611C5B21BA5DA100D67CE7 /* AboutTableViewController.m in Sources */,
 				40BCC89D21C892A700400209 /* b64.c in Sources */,
 				40611C6F21BA5DA100D67CE7 /* PasswordInputViewController.m in Sources */,
 				40611C6D21BA5DA100D67CE7 /* StreamingLayoutView.m in Sources */,
 				40611C9121BA5DA100D67CE7 /* TouchIDTool.m in Sources */,
+				DDA4745A22A3B3E2004726F9 /* ge_p2_dbl.c in Sources */,
 				40611C4321BA5DA100D67CE7 /* main.m in Sources */,
+				DDA4746122A3B3E2004726F9 /* ge_add.c in Sources */,
 				40611C4421BA5DA100D67CE7 /* AppState.m in Sources */,
 				40611C3C21BA5DA100D67CE7 /* NSString+Decimal.m in Sources */,
+				DDA4744622A3B3E2004726F9 /* sha2big.c in Sources */,
+				DDA4747222A3B3E2004726F9 /* curve25519-donna.c in Sources */,
+				DDA4745422A3B3E2004726F9 /* curve_sigs.c in Sources */,
 				40611C5921BA5DA100D67CE7 /* ChooseNetworkViewController.m in Sources */,
 				40611C6E21BA5DA100D67CE7 /* PasswordInputModel.m in Sources */,
+				DDA4746D22A3B3E2004726F9 /* ge_p1p1_to_p3.c in Sources */,
+				DDA4745222A3B3E2004726F9 /* ge_tobytes.c in Sources */,
 				40BCC89F21C892A700400209 /* crypto_scrypt-nosse.c in Sources */,
 				40611C5321BA5DA100D67CE7 /* SectionHeaderView.m in Sources */,
 				40611C8321BA5DA100D67CE7 /* NavigationController.m in Sources */,
 				40611C8621BA5DA100D67CE7 /* ThemeRootView.m in Sources */,
+				DDA4746822A3B3E2004726F9 /* fe_isnegative.c in Sources */,
+				DDA4744422A3B3E2004726F9 /* fe_sq2.c in Sources */,
+				DDA4746722A3B3E2004726F9 /* fe_frombytes.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
