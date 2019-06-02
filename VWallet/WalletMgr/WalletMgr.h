@@ -8,7 +8,29 @@
 #import <Foundation/Foundation.h>
 @import Vsys;
 
+
+static NSString* const NetworkMainnet = @";";
+static NSString* const NetworkTestnet = @"T";
+
+static NSString* const AddressVersion = @"29";
+
 NS_ASSUME_NONNULL_BEGIN
+
+@interface VsysAccountEx : NSObject
+
+@property (nonatomic, copy) NSString* accountSeed;
+
+@property (nonatomic, copy) NSString* address;
+
+@property (nonatomic, copy) NSString* privateKey;
+
+@property (nonatomic, copy) NSString* publicKey;
+
+@property (nonatomic, strong) VsysAccount* account;
+
+- (NSString*)signData:(NSData*)data;
+
+@end
 
 @interface WalletMgr : NSObject
 
@@ -40,6 +62,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSError *)generateSalt:(NSString *)password;
 
 - (NSError *)saveToStorage;
+
+- (NSString *)createAddress:(NSString *)seed : (NSInteger)nonce : (NSString *)network :(NSString *)version;
+
+- (NSString *)createAddress:(NSString* )network : (NSString *)publicKey : (NSString *)version;
+
+- (BOOL)validateAddress:(NSString* )address;
 
 - (NSError *)logoutWallet;
 

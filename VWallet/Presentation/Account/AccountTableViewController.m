@@ -122,7 +122,15 @@ static NSString *const CellIdentifier = @"AccountTableViewCell";
         NSInteger accountCount = WalletMgr.shareInstance.nonce + 1;
         for (NSInteger i = accountCount; i < accountCount + addAccountCount; i++) {
             VsysAccount *account = [WalletMgr.shareInstance.wallet generateAccount:i];
-            [newAccountArray addObject:account];
+            
+            VsysAccountEx *accountEx = [[VsysAccountEx alloc] init];
+            accountEx.address = [WalletMgr.shareInstance createAddress:WalletMgr.shareInstance.seed:i:WalletMgr.shareInstance.network:AddressVersion];
+            accountEx.privateKey = account.privateKey;
+            accountEx.publicKey = account.publicKey;
+            accountEx.accountSeed = account.accountSeed;
+            accountEx.account = account;
+            
+            [newAccountArray addObject:accountEx];
             [newAccountSeedArray addObject:account.accountSeed];
         }
         NSArray *originAccountArray = WalletMgr.shareInstance.accounts ?: @[];
