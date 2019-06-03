@@ -67,11 +67,13 @@
 
 - (void)initView {
     self.pageTitleLabel.text = VLocalize(@"launch_page_title");
+    self.pageTitleLabel.textColor = VColor.Black_1;
     self.pageSubtitleLabel.text = VLocalize(@"launch_page_subtitle");
+    self.pageSubtitleLabel.textColor = VColor.Black_2;
     [self.createBtn setTitle:VLocalize(@"create_wallet") forState:UIControlStateNormal];
     [self.importBtn setTitle:VLocalize(@"import_wallet") forState:UIControlStateNormal];
     [self.importPhraseBtn setTitle:VLocalize(@"mnemonic_word_import") forState:UIControlStateNormal];
-    
+    [self.importBtn setTitleColor:VColor.orangeColor forState:UIControlStateNormal];
     self.BtnContainerView.layer.borderColor = VColor.borderColor.CGColor;
     self.importWalletCloseBtn.layer.borderColor = VColor.borderColor.CGColor;
     [self.view addSubview:self.importSelectorView];

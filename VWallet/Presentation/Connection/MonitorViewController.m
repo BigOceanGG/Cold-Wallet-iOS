@@ -119,9 +119,9 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
 
 - (UIColor *)getConnectionColorByStatus:(BOOL)status {
     if (status) {
-        return VColor.greenColor;
-    } else {
         return VColor.redColor;
+    } else {
+        return VColor.greenColor;
     }
 }
 @end

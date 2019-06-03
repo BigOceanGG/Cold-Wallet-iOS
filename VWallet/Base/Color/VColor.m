@@ -52,7 +52,7 @@
 }
 
 + (UIColor *)borderColor {
-    return [UIColor colorWithHex:0x36363D];
+    return [UIColor colorWithHex:0xFF6565];
 }
 
 + (UIColor *)orangeColor {
