@@ -45,7 +45,9 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
     self.titleLabel.adjustsFontSizeToFitWidth = YES;
     self.descLabel.adjustsFontSizeToFitWidth = YES;
     self.titleLabel.text = VLocalize(@"connection_monitor_title");
+    self.titleLabel.textColor = VColor.Black_1;
     self.descLabel.text = VLocalize(@"connection_monitor_detail");
+    self.descLabel.textColor = VColor.Black_2;
     [self.refreshBtn setTitle:VLocalize(@"connection_monitor_btn") forState:UIControlStateNormal];
 }
 
@@ -66,6 +68,8 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
     
     CellItem *item = self.contentData[indexPath.section].cellItems[indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:item.type forIndexPath:indexPath];
+  
+    cell.backgroundColor = VColor.rootViewBgColor;
     
     if (item.type == VNormalTableViewCellIdentifier) {
         [(NormalTableViewCell *)cell setupCellItem:item];
@@ -96,9 +100,9 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
 - (void)updateContentData {
     
     NSArray <CellItem *> *cellItems1 = @[
-        VCellItem(@"", VNormalTableViewCellIdentifier, @"WIFI", @"", [self getConnectionDescByStatus:[DeviceState shareInstance].wifiEnable], (@{@"titleColor": VColor.textColor, @"descColor": [self getConnectionColorByStatus:[DeviceState shareInstance].wifiEnable]})),
-        VCellItem(@"", VNormalTableViewCellIdentifier, VLocalize(@"cellular"), @"", [self getConnectionDescByStatus:[DeviceState shareInstance].cellularEnable], (@{@"titleColor": VColor.textColor, @"descColor": [self getConnectionColorByStatus:[DeviceState shareInstance].cellularEnable]})),
-        VCellItem(@"", VNormalTableViewCellIdentifier, VLocalize(@"bluetooth"), @"", [self getConnectionDescByStatus:[DeviceState shareInstance].bluetoothEnable], (@{@"titleColor": VColor.textColor, @"descColor": [self getConnectionColorByStatus:[DeviceState shareInstance].bluetoothEnable]})),
+        VCellItem(@"", VNormalTableViewCellIdentifier, @"WIFI", @"", [self getConnectionDescByStatus:[DeviceState shareInstance].wifiEnable], (@{@"titleColor": VColor.Black_1, @"descColor": [self getConnectionColorByStatus:[DeviceState shareInstance].wifiEnable]})),
+        VCellItem(@"", VNormalTableViewCellIdentifier, VLocalize(@"cellular"), @"", [self getConnectionDescByStatus:[DeviceState shareInstance].cellularEnable], (@{@"titleColor": VColor.Black_1, @"descColor": [self getConnectionColorByStatus:[DeviceState shareInstance].cellularEnable]})),
+        VCellItem(@"", VNormalTableViewCellIdentifier, VLocalize(@"bluetooth"), @"", [self getConnectionDescByStatus:[DeviceState shareInstance].bluetoothEnable], (@{@"titleColor": VColor.Black_1, @"descColor": [self getConnectionColorByStatus:[DeviceState shareInstance].bluetoothEnable]})),
                                          ];
     NSArray *contentData = @[
                              VSectionItem(@"", cellItems1),
@@ -115,9 +119,9 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
 
 - (UIColor *)getConnectionColorByStatus:(BOOL)status {
     if (status) {
-        return VColor.redColor;
-    } else {
         return VColor.greenColor;
+    } else {
+        return VColor.redColor;
     }
 }
 @end

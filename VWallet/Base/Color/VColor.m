@@ -27,7 +27,7 @@
 }
 
 + (UIColor *)rootViewBgColor {
-    return [UIColor colorWithHex:0x1E1E24];
+    return [UIColor colorWithHex:0xFFFFFF];
 }
 
 + (UIColor *)viewBgColor {
@@ -56,19 +56,27 @@
 }
 
 + (UIColor *)orangeColor {
-    return [UIColor colorWithHex:0xFF8737];
+    return [UIColor colorWithHex:0xFF6565];
 }
 
 + (UIColor *)redColor {
-    return [UIColor colorWithHex:0xD13245];
+    return [UIColor colorWithHex:0xFF0000];
 }
 
 + (UIColor *)greenColor {
-    return [UIColor colorWithHex:0x23A28C];
+    return [UIColor colorWithHex:0x2BD480];
 }
 
 + (UIColor *)grayColor {
     return [UIColor colorWithHex:0x81818A];
+}
+
++ (UIColor *)Black_1 {
+    return [UIColor colorWithHex:0x222222];
+}
+
++ (UIColor *)Black_2 {
+    return [UIColor colorWithHex:0x666666];
 }
 
 @end
