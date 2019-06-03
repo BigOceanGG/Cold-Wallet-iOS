@@ -85,7 +85,7 @@
     
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
     style.alignment = NSTextAlignmentCenter;
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString: VLocalize(@"local_backup_import") attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:16 weight:UIFontWeightMedium], NSForegroundColorAttributeName:[UIColor whiteColor], NSParagraphStyleAttributeName: style}];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString: VLocalize(@"local_backup_import") attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:16 weight:UIFontWeightMedium], NSForegroundColorAttributeName:VColor.orangeColor, NSParagraphStyleAttributeName: style}];
     if ([WalletMgr.shareInstance checkWalletBackup]) {
         NSAttributedString *str2 = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"\n%@", VLocalize(@"detect_local_wallet")] attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:11], NSForegroundColorAttributeName:[UIColor whiteColor], NSParagraphStyleAttributeName: style}];
         [str appendAttributedString:str2];
