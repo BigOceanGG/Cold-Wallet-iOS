@@ -6,7 +6,7 @@
 */
 
 "tip_init_alert_title" = "官方提示";
-"tip_init_alert_detail" = "为保证您的个人财产安全，请务必确保您的钱包APP来自VSYS官方网站v.systems下载";
+"tip_init_alert_detail" = "为保证您的个人财产安全，请务必确保您的钱包APP来自TV官方网站t.top下载";
 "tip_init_alert_btn" = "知道了";
 
 "settings_wallet_manager" = "钱包管理";
@@ -47,7 +47,7 @@
 "tabbar_page_title_0" = "我的钱包";
 "tabbar_page_title_1" = "设置";
 
-"launch_page_title" = "欢迎使用WALK WALLET";
+"launch_page_title" = "欢迎使用TV WALLET";
 "launch_page_subtitle" = "请先创建钱包、或导入钱包";
 
 "input_password" = "输入密码";
@@ -60,7 +60,7 @@
 "local_backup_import" = "本机备份导入";
 
 "setup_password" = "设置密码";
-"wallet_password_settings_tip_text" = "请牢记您的密码！Walk Wallet不存储用户密码，无法提供找回功能";
+"wallet_password_settings_tip_text" = "请牢记您的密码！TV Wallet不存储用户密码，无法提供找回功能";
 "create_wallet_password" = "创建钱包密码";
 "wallet_password_placeholder" = "请输入至少8位字符";
 "wallet_password_length_tip_text" = "至少8位字符";
@@ -117,14 +117,14 @@
 "detect_local_wallet" = "检测到1个备份钱包";
 
 "version_title" = "版本号";
-"version_desc" = "Walk Wallet Cold 是参考VSYS区块链网络，而实现的一款高安全性的冷钱包。它实现了Walk Wallet格式规范1.0。";
+"version_desc" = "TV Wallet Cold 是一款高安全性的冷钱包。";
 
 
 "network_mainnet" = "正式网络";
 "network_testnet" = "测试网络";
 "network_choose_tip" = "成功创建钱包后，网络环境将不能进行修改";
-"network_mainnet_desc" = "在正式网络环境下，用户可进行VSYS现实资产的安全存储，此环境适用于普通用户日常使用";
-"network_testnet_desc" = "在测试网络环境下，用户不可进行VSYS真实资产的安全存储，此环境适用于开发者做模拟测试使用，若非专业开发者，建议您使用正式环境";
+"network_mainnet_desc" = "在正式网络环境下，用户可进行TV现实资产的安全存储，此环境适用于普通用户日常使用";
+"network_testnet_desc" = "在测试网络环境下，用户不可进行TV真实资产的安全存储，此环境适用于开发者做模拟测试使用，若非专业开发者，建议您使用正式环境";
 "network_title" = "网络环境";
 "network_choose_btn_title1" = "切换至普通用户正式环境";
 "network_choose_btn_title2" = "切换至开发者测试环境";
@@ -171,7 +171,7 @@
 "password_auth_placeholder" = "请输入钱包密码";
 
 // ---- touch auth ----
-"tip_secure_auth_detail" = "解锁 Walk Wallet";
+"tip_secure_auth_detail" = "解锁 TV Wallet";
 
 // ---- Transaction Type ----
 "const_transaction_type_payment" = "转账";
