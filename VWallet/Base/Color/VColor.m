@@ -79,4 +79,8 @@
     return [UIColor colorWithHex:0x666666];
 }
 
++ (UIColor *)GrayColor {
+    return [UIColor colorWithHex:0xEEEEEE];
+}
+
 @end

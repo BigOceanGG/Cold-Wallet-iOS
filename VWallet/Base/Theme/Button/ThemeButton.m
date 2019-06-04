@@ -70,7 +70,7 @@
 - (void)setEnabled:(BOOL)enabled {
     [super setEnabled:enabled];
     if (_submit && !_hollow) {
-        self.backgroundColor = enabled ? VColor.orangeColor : VColor.viewBgColor;
+        self.backgroundColor = enabled ? VColor.orangeColor : VColor.GrayColor;
     }
 }
 
