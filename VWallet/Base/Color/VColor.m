@@ -11,11 +11,11 @@
 @implementation VColor
 
 + (UIColor *)tabbarBgColor {
-    return [UIColor colorWithHex:0x1E1E24];
+    return [UIColor colorWithHex:0xFFFFFF];
 }
 
 + (UIColor *)tabbarTintColor {
-    return [UIColor colorWithHex:0xFFFFFF];
+    return [UIColor colorWithHex:0x222222];
 }
 
 + (UIColor *)navigationBgColor {
