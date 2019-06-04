@@ -46,9 +46,12 @@
 - (void)initView {
     
     self.pageTitleLabel.text = self.model.title;
+    self.pageTitleLabel.textColor = VColor.Black_2;
     self.pageSubtitleLabel.text = self.model.titleDetail;
+    self.pageSubtitleLabel.textColor = VColor.Black_2;
     
     self.pwdTextField.placeholder = VLocalize(@"input_password");
+    self.pwdTextField.textColor = VColor.Black_2;
 }
 
 - (void)closeBtnClick {

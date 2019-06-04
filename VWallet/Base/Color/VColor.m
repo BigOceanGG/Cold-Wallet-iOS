@@ -31,7 +31,7 @@
 }
 
 + (UIColor *)viewBgColor {
-    return [UIColor colorWithHex:0xEEEEEE];
+    return [UIColor colorWithHex:0xFF6565];
 }
 
 + (UIColor *)textColor {
@@ -39,7 +39,7 @@
 }
 
 + (UIColor *)textSecondColor {
-    return [UIColor colorWithHex:0x81818A];
+    return [UIColor colorWithHex:0xFFFFFF];
 }
 
 + (UIColor *)placeholderColor {

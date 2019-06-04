@@ -35,7 +35,7 @@ static NSString *const CellIdentifier = @"AccountTableViewCell";
 
 - (NSArray<UIColor *> *)cellColorHexStrArray {
     if (!_cellColorHexStrArray) {
-        _cellColorHexStrArray = @[[UIColor colorWithHex:0xFF8737],
+        _cellColorHexStrArray = @[[UIColor colorWithHex:0xFF7C7C],
                                   [UIColor colorWithHex:0xFFB300],
                                   [UIColor colorWithHex:0x5E35B1],
                                   [UIColor colorWithHex:0x3949AB],
@@ -192,7 +192,8 @@ static NSString *const CellIdentifier = @"AccountTableViewCell";
 }
 
 - (UIColor *)flagColorWithIndexPath:(NSIndexPath *)indexPath {
-    return self.cellColorHexStrArray[(indexPath.row % self.cellColorHexStrArray.count)];
+//    return self.cellColorHexStrArray[(indexPath.row % self.cellColorHexStrArray.count)];
+    return self.cellColorHexStrArray[0];
 }
 
 @end

@@ -10,6 +10,7 @@
 #import "UIImage+QRCode.h"
 #import "UIColor+Hex.h"
 #import "ThemeLabel.h"
+#import "VColor.h"
 
 @interface AccountQRPreviewViewController ()
 
@@ -48,6 +49,7 @@
     self.valueLabel.text = self.showInfo[@"title"];
     self.valueLabel1.text = self.showInfo[@"desc"];
     self.qrcodeImgView.image = [UIImage imageWithQrCodeStr:self.showInfo[@"qr_code_str"]];
+    self.view.backgroundColor = VColor.Black_1;
 }
 
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
