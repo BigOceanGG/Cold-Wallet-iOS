@@ -73,6 +73,8 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
 
     CellItem *item = self.contentData[indexPath.section].cellItems[indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:item.type forIndexPath:indexPath];
+    
+    cell.backgroundColor = VColor.rootViewBgColor;
 
     if (item.type == VArrowTableViewCellIdentifier) {
         [(ArrowTableViewCell *)cell setupCellItem:item];
