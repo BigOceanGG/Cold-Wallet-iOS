@@ -31,7 +31,7 @@
 }
 
 + (UIColor *)viewBgColor {
-    return [UIColor colorWithHex:0x2B2B33];
+    return [UIColor colorWithHex:0xEEEEEE];
 }
 
 + (UIColor *)textColor {
