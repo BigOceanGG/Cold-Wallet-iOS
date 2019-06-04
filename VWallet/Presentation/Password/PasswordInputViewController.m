@@ -52,6 +52,8 @@
     
     self.pwdTextField.placeholder = VLocalize(@"input_password");
     self.pwdTextField.textColor = VColor.Black_2;
+    
+    self.enterBtn.tintColor = VColor.grayColor;
 }
 
 - (void)closeBtnClick {
@@ -70,6 +72,9 @@
 
 - (IBAction)pwdTextFieldEditingChanged {
     _enterBtn.enabled = self.pwdTextField.text.length > 0;
+    if(_enterBtn.enabled){
+        self.enterBtn.tintColor = VColor.orangeColor;
+    }
 }
 
 - (IBAction)submit {
