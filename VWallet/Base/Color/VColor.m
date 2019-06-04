@@ -19,7 +19,7 @@
 }
 
 + (UIColor *)navigationBgColor {
-    return [UIColor colorWithHex:0x1E1E24];
+    return [UIColor colorWithHex:0xFFFFFF];
 }
 
 + (UIColor *)navigationTintColor {

@@ -47,6 +47,7 @@
 - (void)initView {
     self.title = VLocalize(@"network_title");
     self.descLabel.text = VLocalize(@"network_choose_tip");
+    self.descLabel.textColor = VColor.Black_2;
     self.titleLabel.text = VLocalize(@"network_mainnet");
     self.secondTitleLabel.text = VLocalize(@"network_mainnet_desc");
     self.view.backgroundColor = VColor.rootViewBgColor;
