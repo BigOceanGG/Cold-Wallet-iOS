@@ -6,6 +6,7 @@
 //
 
 #import "AlertViewController.h"
+#import "VColor.h"
 
 @interface AlertViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
@@ -80,6 +81,13 @@
                 weakself.cancelBtn.hidden = YES;
             } else {
                 [weakself.cancelBtn setTitle:cancelTitle forState:UIControlStateNormal];
+                [weakself.cancelBtn setTitleColor:VColor.Black_1 forState:UIControlStateNormal];
+                [weakself.cancelBtn setBackgroundColor:VColor.rootViewBgColor];
+
+                [weakself.cancelBtn.layer setMasksToBounds:YES];
+                [weakself.cancelBtn.layer setCornerRadius:10.0];
+                [weakself.cancelBtn.layer setBorderWidth:1.0];
+                [weakself.cancelBtn.layer setBorderColor:VColor.orangeColor.CGColor];
             }
             [weakself.confirmBtn setTitle:confirmTitle forState:UIControlStateNormal];
             weakself.cancelCallback = cancel;
