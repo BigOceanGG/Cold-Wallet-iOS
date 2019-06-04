@@ -90,6 +90,7 @@
                 [weakself.cancelBtn.layer setBorderColor:VColor.orangeColor.CGColor];
             }
             [weakself.confirmBtn setTitle:confirmTitle forState:UIControlStateNormal];
+            [weakself.confirmBtn setBackgroundColor:VColor.orangeColor];
             weakself.cancelCallback = cancel;
             weakself.confirmCallback = confirm;
         };
