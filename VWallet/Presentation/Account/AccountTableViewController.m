@@ -59,8 +59,8 @@ static NSString *const CellIdentifier = @"AccountTableViewCell";
     }
     [WalletMgr.shareInstance loadWallet:WalletMgr.shareInstance.password];
     [self.addAccountBtn setTitle:VLocalize(@"add_more_account") forState:UIControlStateNormal];
-    [self.addAccountBtn setTitleColor:VColor.textSecondColor forState:UIControlStateNormal];
-    self.addAccountBtn.tintColor = VColor.textSecondColor;
+    [self.addAccountBtn setTitleColor:VColor.Black_2 forState:UIControlStateNormal];
+    self.addAccountBtn.tintColor = VColor.Black_2;
     self.tableView.backgroundColor = VColor.rootViewBgColor;
     [self.tableView setRowHeight:127.f];
     [self.tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
