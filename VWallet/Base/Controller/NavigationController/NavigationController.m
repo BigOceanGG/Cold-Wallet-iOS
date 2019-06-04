@@ -24,14 +24,14 @@
 - (void)setupNavigationBar {
     self.view.backgroundColor = VColor.navigationBgColor;
     self.navigationBar.translucent = NO;
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : VColor.Black_1};
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : VColor.Black_2};
     self.navigationBar.tintColor = VColor.navigationTintColor;
     self.navigationBar.shadowImage = UIImage.new;
     self.navigationBar.backgroundColor = VColor.navigationBgColor;
     [self.navigationBar setBackgroundImage:[UIImage imageWithColor:VColor.navigationBgColor] forBarMetrics:UIBarMetricsDefault];
     if (@available(iOS 11.0, *)) {
         self.navigationBar.prefersLargeTitles = YES;
-        self.navigationBar.largeTitleTextAttributes = @{NSForegroundColorAttributeName : VColor.Black_1};
+        self.navigationBar.largeTitleTextAttributes = @{NSForegroundColorAttributeName : VColor.Black_2};
     }
     
     [UINavigationBar appearance].backIndicatorTransitionMaskImage = [UIImage imageNamed:@"ico_navi_back"];
