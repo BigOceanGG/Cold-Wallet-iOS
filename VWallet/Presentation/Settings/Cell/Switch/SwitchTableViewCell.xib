@@ -47,7 +47,7 @@
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edc-wA-WrO">
                         <rect key="frame" x="306" y="15.5" width="51" height="31"/>
                         <color key="backgroundColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="onTintColor" red="0.13725490196078433" green="0.63529411764705879" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="onTintColor" red="0.27058823529411763" green="0.85882352941176465" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="15"/>
