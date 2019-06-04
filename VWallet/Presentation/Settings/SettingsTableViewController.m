@@ -217,7 +217,7 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
     NSArray <CellItem *> *cellItems3 = @[
      VCellItem(@"", VArrowTableViewCellIdentifier, VLocalize(@"settings_network"), @"ico_web", [WalletMgr.shareInstance networkDescription], (@{@"no_arrow":@(YES), @"descColor": VColor.textSecondColor})),
      VCellItem(@"about", VArrowTableViewCellIdentifier, VLocalize(@"settings_about_us"), @"ico_about", @"", @{}),
-     VCellItem(@"logout", VNormalTableViewCellIdentifier, VLocalize(@"settings_logout_wallet"), @"ico_cancel", @"", @{})
+     VCellItem(@"logout", VNormalTableViewCellIdentifier, VLocalize(@"settings_logout_wallet"), @"ico_cancel", @"", @{@"titleColor": VColor.Black_1})
      ];
     
     NSArray *contentData = @[
