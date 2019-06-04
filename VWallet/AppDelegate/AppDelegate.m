@@ -83,7 +83,7 @@
     if ([weakself.window.rootViewController isMemberOfClass:MonitorViewController.class]) {
         return;
     }
-    if ([DeviceState shareInstance].wifiEnable || [DeviceState shareInstance].bluetoothEnable || [DeviceState shareInstance].cellularEnable) {
+    if (0) {
         MonitorViewController *vc = [[UIStoryboard storyboardWithName:@"Connection" bundle:nil] instantiateInitialViewController];
         [vc redetectionCallback:^{
             if (![DeviceState shareInstance].wifiEnable && ![DeviceState shareInstance].bluetoothEnable && ![DeviceState shareInstance].cellularEnable) {
