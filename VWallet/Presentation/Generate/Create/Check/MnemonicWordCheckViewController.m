@@ -13,6 +13,7 @@
 #import "VStoryboard.h"
 #import "StreamingLayoutView.h"
 #import "ResultViewController.h"
+#import "VColor.h"
 
 @interface MnemonicWordCheckViewController () <StreamingLayoutViewDelegate>
 
@@ -56,6 +57,7 @@
     _contentWidth = CGRectGetWidth(UIScreen.mainScreen.bounds) - 40.f;
     self.navigationItem.title = VLocalize(@"backup_mnemonic_word");
     _titleLabel.text = VLocalize(@"check_mnemonic_word_tip_text");
+    _titleLabel.textColor = VColor.Black_2;
     [_submittBtn setTitle:VLocalize(@"affirm") forState:UIControlStateNormal];
     
     _streamingLayoutView1.delegate = self;

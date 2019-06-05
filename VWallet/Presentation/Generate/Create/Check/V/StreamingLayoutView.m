@@ -34,9 +34,12 @@
             btn.titleLabel.font = [UIFont systemFontOfSize:16.f];
             [btn setTitle:text forState:UIControlStateNormal];
             [btn setTitleColor:VColor.textColor forState:UIControlStateNormal];
-            [btn setTitleColor:VColor.textSecondColor forState:UIControlStateSelected];
+            [btn setTitleColor:VColor.Black_2 forState:UIControlStateSelected];
             btn.layer.borderColor = VColor.borderColor.CGColor;
             [self setBtnStyle:btn];
+            if(!_selectable){
+                [btn setTitleColor:VColor.Black_2 forState:UIControlStateNormal];
+            }
             btn.layer.cornerRadius = 4.f;
             CGSize textSize = [text sizeWithAttributes:@{NSFontAttributeName : btn.titleLabel.font}];
             CGSize itemSize = CGSizeMake(textSize.width + 24.f, 36.f);
@@ -107,7 +110,7 @@
 }
 
 - (void)setBtnStyle:(UIButton *)btn {
-    UIColor *bgColor = _selectable ? (btn.selected ? UIColor.clearColor : VColor.orangeColor) : VColor.viewBgColor;
+    UIColor *bgColor = _selectable ? (btn.selected ? UIColor.clearColor : VColor.orangeColor) : VColor.GrayColorEx;
     CGFloat borderWidth = (_selectable && btn.selected) ? 1.f : 0.f;
     btn.backgroundColor = bgColor;
     btn.layer.borderWidth = borderWidth;
