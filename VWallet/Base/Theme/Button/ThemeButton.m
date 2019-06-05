@@ -37,7 +37,7 @@
 }
 
 - (void)updateShowStyle {
-    self.tintColor = (_secondTheme ? VColor.textSecondColor : VColor.grayColor);
+    self.tintColor = (_secondTheme ? VColor.textSecondColor : VColor.textColor);
     [self setTitleColor:self.tintColor forState:UIControlStateNormal];
     [self setTitleColor:VColor.textSecondColor forState:UIControlStateDisabled];
     if (_submit) {

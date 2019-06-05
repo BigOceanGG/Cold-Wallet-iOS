@@ -49,6 +49,7 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
     self.descLabel.text = VLocalize(@"connection_monitor_detail");
     self.descLabel.textColor = VColor.Black_2;
     [self.refreshBtn setTitle:VLocalize(@"connection_monitor_btn") forState:UIControlStateNormal];
+    [self.refreshBtn setTitleColor:VColor.textColor forState:UIControlStateNormal];
 }
 
 #pragma mark - Table view data source

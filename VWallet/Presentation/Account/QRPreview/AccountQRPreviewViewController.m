@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel1;
 @property (weak, nonatomic) IBOutlet UIImageView *qrcodeImgView;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -53,6 +54,8 @@
     self.valueLabel1.textColor = VColor.Black_2;
     self.qrcodeImgView.image = [UIImage imageWithQrCodeStr:self.showInfo[@"qr_code_str"]];
     self.contentView.backgroundColor = VColor.rootViewBgColor;
+    
+    self.button.tintColor = VColor.grayColor;
 }
 
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
