@@ -14,6 +14,7 @@
 #import "UITextView+Placeholder.h"
 #import "VStoryboard.h"
 #import "WindowManager.h"
+#import "VColor.h"
 
 @interface PasswordAuthAlertViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
@@ -42,6 +43,7 @@
             make.height.equalTo(@(40));
         }];
         weakSelf.textField.placeholder = self.model.placeholder;
+        weakSelf.textField.textColor = VColor.Black_2;
     } cancelTitle: VLocalize(@"cancel") confirmTitle:VLocalize(@"confirm") cancel:^{
         [weakSelf.textField resignFirstResponder];
         [weakSelf.rootVc dismissViewControllerAnimated:YES completion:nil];

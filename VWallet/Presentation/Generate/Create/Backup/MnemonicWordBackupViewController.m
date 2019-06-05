@@ -8,7 +8,7 @@
 #import "MnemonicWordBackupViewController.h"
 
 #import "Language.h"
-
+#import "VColor.h"
 #import "MnemonicWordCheckViewController.h"
 
 @interface MnemonicWordBackupViewController ()
@@ -40,11 +40,13 @@
 - (void)initView {
     self.navigationItem.title = VLocalize(@"backup_mnemonic_word");
     _titleLabel.text = VLocalize(@"backup_mnemonic_word_tip_text");
+    _titleLabel.textColor = VColor.Black_2;
     [_nextBtn setTitle:VLocalize(@"mnemonic_word_already_write_down") forState:UIControlStateNormal];
     NSMutableParagraphStyle *ps = [[NSMutableParagraphStyle alloc] init];
     ps.lineSpacing = 12.f;
     ps.alignment = NSTextAlignmentCenter;
-    _mnemonicWordsLabel.attributedText = [[NSAttributedString alloc] initWithString:[_mnemonicWordArrsy componentsJoinedByString:@"   "] attributes:@{NSParagraphStyleAttributeName : ps}];
+    _mnemonicWordsLabel.attributedText = [[NSAttributedString alloc] initWithString:[_mnemonicWordArrsy componentsJoinedByString:@"   "] attributes:@{NSParagraphStyleAttributeName : ps,NSForegroundColorAttributeName : VColor.Black_2}];
+    
     
     if (self.navigationController.childViewControllers.firstObject == self) {
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ico_close"] style:UIBarButtonItemStylePlain target:self action:@selector(close)];

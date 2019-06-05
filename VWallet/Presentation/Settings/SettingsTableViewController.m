@@ -42,7 +42,7 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
     [super viewDidLoad];
     self.navigationItem.title = VLocalize(@"tabbar_page_title_1");
     if (@available(iOS 11.0, *)) {
-        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAlways;
+        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
     }
     self.tableView.backgroundColor = VColor.rootViewBgColor;
     self.tableView.separatorColor = VColor.rootViewBgColor;
@@ -215,9 +215,9 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
     
     
     NSArray <CellItem *> *cellItems3 = @[
-     VCellItem(@"", VArrowTableViewCellIdentifier, VLocalize(@"settings_network"), @"ico_web", [WalletMgr.shareInstance networkDescription], (@{@"no_arrow":@(YES), @"descColor": VColor.textSecondColor})),
+     VCellItem(@"", VArrowTableViewCellIdentifier, VLocalize(@"settings_network"), @"ico_web", [WalletMgr.shareInstance networkDescription], (@{@"no_arrow":@(YES), @"descColor": VColor.Black_1})),
      VCellItem(@"about", VArrowTableViewCellIdentifier, VLocalize(@"settings_about_us"), @"ico_about", @"", @{}),
-     VCellItem(@"logout", VNormalTableViewCellIdentifier, VLocalize(@"settings_logout_wallet"), @"ico_cancel", @"", @{@"titleColor": VColor.Black_1})
+     VCellItem(@"logout", VNormalTableViewCellIdentifier, VLocalize(@"settings_logout_wallet"), @"ico_cancel", @"", @{@"titleColor": VColor.orangeColor})
      ];
     
     NSArray *contentData = @[
