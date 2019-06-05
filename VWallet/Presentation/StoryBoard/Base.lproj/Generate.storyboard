@@ -33,9 +33,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Evz-Dr-J5w">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW4-xT-agp" customClass="ThemeButton">
                                 <rect key="frame" x="24" y="595" width="327" height="48"/>
                                 <constraints>
@@ -110,6 +107,9 @@
                                     <constraint firstItem="x7s-Fg-fIL" firstAttribute="top" secondItem="WQw-se-CSM" secondAttribute="bottom" constant="6" id="jbD-x0-fve"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="vsys_welcome" translatesAutoresizingMaskIntoConstraints="NO" id="Evz-Dr-J5w">
+                                <rect key="frame" x="103" y="337" width="168" height="99"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -245,10 +245,11 @@
                     <viewLayoutGuide key="safeArea" id="KfQ-jM-6fO"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-46" y="156"/>
+            <point key="canvasLocation" x="-47.200000000000003" y="155.17241379310346"/>
         </scene>
     </scenes>
     <resources>
         <image name="ico_close_tip" width="48" height="48"/>
+        <image name="vsys_welcome" width="240" height="240"/>
     </resources>
 </document>
