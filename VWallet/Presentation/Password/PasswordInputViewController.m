@@ -53,6 +53,8 @@
     self.pwdTextField.placeholder = VLocalize(@"input_password");
     self.pwdTextField.textColor = VColor.Black_2;
     
+    self.enterBtn.tintColor = VColor.grayColor;
+    
 }
 
 - (void)closeBtnClick {

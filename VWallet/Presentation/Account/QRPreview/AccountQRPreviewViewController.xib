@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountQRPreviewViewController">
             <connections>
+                <outlet property="button" destination="WaL-Qh-bmq" id="UGX-33-XZ0"/>
                 <outlet property="contentView" destination="xSe-gO-bKX" id="LeA-3H-END"/>
                 <outlet property="detailLabel" destination="9DV-wp-mJV" id="l7Q-xw-pUb"/>
                 <outlet property="flagLabel" destination="ahx-a2-FzY" id="87I-5H-rpF"/>
