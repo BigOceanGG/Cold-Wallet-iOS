@@ -8,6 +8,7 @@
 #import "TradeVerifyQRPreviewViewController.h"
 #import "Language.h"
 #import "UIImage+QRCode.h"
+#import "VColor.h"
 
 @interface TradeVerifyQRPreviewViewController ()
 
@@ -35,6 +36,7 @@
         self.completeBlock = complete;
         self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         self.modalPresentationStyle = UIModalPresentationCustom;
+        
     }
     return self;
 }
@@ -45,6 +47,7 @@
     self.descLabel.text = self.desc;
     self.qrCodeImgView.image = [UIImage imageWithQrCodeStr:self.qrCodeStr];
     [self.completeBtn setTitle:VLocalize(@"complete") forState:UIControlStateNormal];
+    self.contentView.backgroundColor = VColor.rootViewBgColor;
 }
 
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
