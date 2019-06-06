@@ -42,7 +42,7 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
     [super viewDidLoad];
     self.navigationItem.title = VLocalize(@"tabbar_page_title_1");
     if (@available(iOS 11.0, *)) {
-        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
+        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAlways;
     }
     self.tableView.backgroundColor = VColor.rootViewBgColor;
     self.tableView.separatorColor = VColor.rootViewBgColor;
