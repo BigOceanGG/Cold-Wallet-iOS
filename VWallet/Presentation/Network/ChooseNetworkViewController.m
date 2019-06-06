@@ -92,7 +92,7 @@
     }
     NSAttributedString *str = [[NSAttributedString alloc] initWithString:title attributes:@{
         NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle),
-        NSForegroundColorAttributeName: VColor.textSecondColor
+        NSForegroundColorAttributeName: VColor.Black_2
         
     }];
     [self.changeNetworkBtn setAttributedTitle:str forState:UIControlStateNormal];

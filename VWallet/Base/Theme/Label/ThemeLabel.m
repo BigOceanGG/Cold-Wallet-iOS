@@ -38,7 +38,7 @@
 
 - (void)setSecondTheme:(BOOL)secondTheme {
     _secondTheme = secondTheme;
-    self.textColor = _secondTheme ? VColor.textSecondColor : VColor.textColor;
+    self.textColor = _secondTheme ? VColor.grayColor : VColor.Black_2;
 }
 
 @end
