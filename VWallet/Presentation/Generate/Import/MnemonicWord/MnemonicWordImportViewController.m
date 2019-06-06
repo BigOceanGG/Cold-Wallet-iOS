@@ -42,10 +42,12 @@
 - (void)initView {
     self.navigationItem.title = VLocalize(@"import_phrase_title");
     self.tipLabel.text = VLocalize(@"import_mnemonic_word_tip");
+    self.tipLabel.textColor = VColor.Black_1;
     self.textView.superview.layer.borderColor = VColor.borderColor.CGColor;
     self.view.backgroundColor = VColor.rootViewBgColor;
     [self.nextBtn setTitle:VLocalize(@"next") forState:UIControlStateNormal];
     self.textView.placeholder = VLocalize(@"confirm_wallet_password_placeholder");
+    self.textView.textColor = VColor.Black_1;
     self.textView.keyboardAppearance = UIKeyboardAppearanceDark;
 }
 
