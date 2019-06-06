@@ -45,13 +45,11 @@
 
 - (void)initView {
     self.detailLabel.text = VLocalize(@"account_address_detail");
-    self.detailLabel.textColor = VColor.Black_2;
     self.flagView.backgroundColor = self.showInfo[@"flag_color"];
     self.flagLabel.text = self.showInfo[@"flag"];
+    self.flagLabel.textColor = VColor.textColor;
     self.valueLabel.text = self.showInfo[@"title"];
-    self.valueLabel.textColor = VColor.Black_2;
     self.valueLabel1.text = self.showInfo[@"desc"];
-    self.valueLabel1.textColor = VColor.Black_2;
     self.qrcodeImgView.image = [UIImage imageWithQrCodeStr:self.showInfo[@"qr_code_str"]];
     self.contentView.backgroundColor = VColor.rootViewBgColor;
     

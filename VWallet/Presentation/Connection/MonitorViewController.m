@@ -45,9 +45,7 @@ static NSString *const VNormalTableViewCellIdentifier = @"NormalTableViewCell";
     self.titleLabel.adjustsFontSizeToFitWidth = YES;
     self.descLabel.adjustsFontSizeToFitWidth = YES;
     self.titleLabel.text = VLocalize(@"connection_monitor_title");
-    self.titleLabel.textColor = VColor.Black_1;
     self.descLabel.text = VLocalize(@"connection_monitor_detail");
-    self.descLabel.textColor = VColor.Black_2;
     [self.refreshBtn setTitle:VLocalize(@"connection_monitor_btn") forState:UIControlStateNormal];
     [self.refreshBtn setTitleColor:VColor.textColor forState:UIControlStateNormal];
 }

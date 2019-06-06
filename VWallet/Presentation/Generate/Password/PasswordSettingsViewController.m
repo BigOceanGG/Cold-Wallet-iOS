@@ -51,16 +51,11 @@
 - (void)initView {
     self.navigationItem.title = self.pageTitle;
     _titleLabel.text = VLocalize(@"wallet_password_settings_tip_text");
-    _titleLabel.textColor = VColor.Black_2;
     _titleLabel1.text = VLocalize(@"create_wallet_password");
-    _titleLabel1.textColor = VColor.Black_2;
     _titleLabel2.text = VLocalize(@"confirm_wallet_password");
-    _titleLabel2.textColor = VColor.Black_2;
     _pwdTextField.placeholder = VLocalize(@"wallet_password_placeholder");
-    _pwdTextField.textColor = VColor.Black_2;
     _pwdLengthTipLabel.text = VLocalize(@"wallet_password_length_tip_text");
     _confirmPwdTextField.placeholder = VLocalize(@"confirm_wallet_password_placeholder");
-    _confirmPwdTextField.textColor = VColor.Black_2;
     _pwdConsistencyTipLabel.text = VLocalize(@"confirm_wallet_password_consistency_tip_text");
     [_submitBtn setTitle:VLocalize(@"complete") forState:UIControlStateNormal];
     

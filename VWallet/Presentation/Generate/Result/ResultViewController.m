@@ -44,9 +44,7 @@
     }
     self.resultTypeImgView.image = img;
     self.titleLabel.text = self.parameter.resultTitle;
-    self.titleLabel.textColor = VColor.Black_2;
     self.messageLabel.text = self.parameter.resultMessage;
-    self.messageLabel.textColor = VColor.Black_2;
     [self.operateBtn setTitle:self.parameter.operateBtnTitle forState:UIControlStateNormal];
     BOOL showSecond = self.parameter.secondOperateBtnTitle.length;
     self.secondOperateBtn.hidden = !showSecond;

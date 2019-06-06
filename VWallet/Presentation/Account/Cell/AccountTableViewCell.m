@@ -38,6 +38,7 @@
 - (void)setFlag:(int)flag flagColor:(UIColor *)flagColor {
     _valueLabel.text = [NSString stringWithFormat:@"%@ %d", VLocalize(@"account"), flag];
     _flagLabel.text = [NSString stringWithFormat:@"%d", flag];
+    _flagLabel.textColor = VColor.textColor;
     _flagView.backgroundColor = flagColor;
 }
 

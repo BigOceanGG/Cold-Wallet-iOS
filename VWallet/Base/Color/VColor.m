@@ -44,7 +44,7 @@
 
 + (UIColor *)placeholderColor {
 //    return [UIColor colorWithHex:0x81818A];
-    return [UIColor colorWithHex:0x4B4B52];
+    return [UIColor colorWithHex:0xAEAEAE];
 }
 
 + (UIColor *)separatorColor {

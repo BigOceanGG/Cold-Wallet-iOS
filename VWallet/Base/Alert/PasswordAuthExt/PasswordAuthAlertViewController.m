@@ -43,7 +43,6 @@
             make.height.equalTo(@(40));
         }];
         weakSelf.textField.placeholder = self.model.placeholder;
-        weakSelf.textField.textColor = VColor.Black_2;
     } cancelTitle: VLocalize(@"cancel") confirmTitle:VLocalize(@"confirm") cancel:^{
         [weakSelf.textField resignFirstResponder];
         [weakSelf.rootVc dismissViewControllerAnimated:YES completion:nil];

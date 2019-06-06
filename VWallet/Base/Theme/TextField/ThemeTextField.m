@@ -33,8 +33,8 @@
 }
 
 - (void)themeInit {
-    self.textColor = VColor.textColor;
-    self.tintColor = VColor.textColor;
+    self.textColor = VColor.grayColor;
+    self.tintColor = VColor.grayColor;
     self.keyboardAppearance = UIKeyboardAppearanceDark;
 }
 
