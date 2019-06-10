@@ -49,9 +49,6 @@
     self.pageSubtitleLabel.text = self.model.titleDetail;
     
     self.pwdTextField.placeholder = VLocalize(@"input_password");
-    
-    self.enterBtn.tintColor = VColor.grayColor;
-    
 }
 
 - (void)closeBtnClick {
