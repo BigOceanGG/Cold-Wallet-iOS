@@ -37,8 +37,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="vsys_logo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2ex-NM-suh">
+                                <rect key="frame" x="139" y="65" width="96" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2ex-NM-suh" secondAttribute="height" multiplier="1:1" id="KqZ-i1-y1g"/>
+                                    <constraint firstAttribute="width" constant="96" id="cu4-FL-5LJ"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-ha-G07">
-                                <rect key="frame" x="24" y="196" width="327" height="68"/>
+                                <rect key="frame" x="24" y="256" width="327" height="68"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎使用WALK WALLET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fER-sb-wIg" customClass="ThemeLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="40"/>
@@ -77,7 +84,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxd-Ov-EQH">
-                                <rect key="frame" x="24" y="320" width="327" height="48"/>
+                                <rect key="frame" x="24" y="380" width="327" height="48"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m7h-no-TtJ" customClass="ThemeTextField">
                                         <rect key="frame" x="12" y="14" width="271" height="20"/>
@@ -122,18 +129,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="vsys_logo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2ex-NM-suh">
-                                <rect key="frame" x="139" y="65" width="96" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="2ex-NM-suh" secondAttribute="height" multiplier="1:1" id="KqZ-i1-y1g"/>
-                                    <constraint firstAttribute="width" constant="96" id="cu4-FL-5LJ"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9yS-ha-G07" firstAttribute="top" secondItem="2ex-NM-suh" secondAttribute="bottom" constant="40" id="QJl-Ic-tD1"/>
-                            <constraint firstItem="2ex-NM-suh" firstAttribute="top" secondItem="qtI-Ag-PG9" secondAttribute="top" constant="40" id="akd-4E-Sdv"/>
+                            <constraint firstItem="2ex-NM-suh" firstAttribute="top" secondItem="qtI-Ag-PG9" secondAttribute="top" constant="100" id="akd-4E-Sdv"/>
                             <constraint firstItem="qtI-Ag-PG9" firstAttribute="trailing" secondItem="Uxd-Ov-EQH" secondAttribute="trailing" constant="24" id="bAJ-WQ-bSP"/>
                             <constraint firstItem="9yS-ha-G07" firstAttribute="leading" secondItem="qtI-Ag-PG9" secondAttribute="leading" constant="24" id="e3B-3l-ifQ"/>
                             <constraint firstItem="2ex-NM-suh" firstAttribute="centerX" secondItem="tEb-CG-cVA" secondAttribute="centerX" id="iQS-E9-rtx"/>
