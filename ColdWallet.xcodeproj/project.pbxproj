@@ -359,7 +359,7 @@
 		40BCC89021C892A600400209 /* sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
 		40BCC89121C892A600400209 /* crypto_scrypt-nosse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-nosse.c"; sourceTree = "<group>"; };
 		40BCC89221C892A600400209 /* crypto_scrypt-hexconvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "crypto_scrypt-hexconvert.h"; sourceTree = "<group>"; };
-		40BF3E37219EAF90000B1437 /* VWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BF3E37219EAF90000B1437 /* ColdWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColdWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C8400F105584F7038EB733 /* Pods-VWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-VWallet/Pods-VWallet.release.xcconfig"; sourceTree = "<group>"; };
 		53A08ECD5AA4CE41041A21E6 /* Pods-VeeWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeeWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VeeWallet/Pods-VeeWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		5F126AF60D480F54113500DF /* libPods-VeeWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VeeWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1335,7 +1335,7 @@
 		40BF3E38219EAF90000B1437 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40BF3E37219EAF90000B1437 /* VWallet.app */,
+				40BF3E37219EAF90000B1437 /* ColdWallet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1499,9 +1499,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		40BF3E36219EAF90000B1437 /* VWallet */ = {
+		40BF3E36219EAF90000B1437 /* ColdWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40BF3E4D219EAF92000B1437 /* Build configuration list for PBXNativeTarget "VWallet" */;
+			buildConfigurationList = 40BF3E4D219EAF92000B1437 /* Build configuration list for PBXNativeTarget "ColdWallet" */;
 			buildPhases = (
 				79298A864DA79790590FB2D3 /* [CP] Check Pods Manifest.lock */,
 				40BF3E33219EAF90000B1437 /* Sources */,
@@ -1514,9 +1514,9 @@
 			);
 			dependencies = (
 			);
-			name = VWallet;
+			name = ColdWallet;
 			productName = VeeWallet;
-			productReference = 40BF3E37219EAF90000B1437 /* VWallet.app */;
+			productReference = 40BF3E37219EAF90000B1437 /* ColdWallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1533,7 +1533,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 40BF3E32219EAF90000B1437 /* Build configuration list for PBXProject "VWallet" */;
+			buildConfigurationList = 40BF3E32219EAF90000B1437 /* Build configuration list for PBXProject "ColdWallet" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1547,7 +1547,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40BF3E36219EAF90000B1437 /* VWallet */,
+				40BF3E36219EAF90000B1437 /* ColdWallet */,
 			);
 		};
 /* End PBXProject section */
@@ -2009,7 +2009,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4UB2TU3M26;
+				DEVELOPMENT_TEAM = FUXVPW2D5C;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2022,7 +2022,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = systems.v.app.coldwalletapp;
+				PRODUCT_BUNDLE_IDENTIFIER = tivalue.coldwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2036,7 +2036,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4UB2TU3M26;
+				DEVELOPMENT_TEAM = FUXVPW2D5C;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2049,7 +2049,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = systems.v.app.coldwalletapp;
+				PRODUCT_BUNDLE_IDENTIFIER = tivalue.coldwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2059,7 +2059,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40BF3E32219EAF90000B1437 /* Build configuration list for PBXProject "VWallet" */ = {
+		40BF3E32219EAF90000B1437 /* Build configuration list for PBXProject "ColdWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40BF3E4B219EAF92000B1437 /* Debug */,
@@ -2068,7 +2068,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40BF3E4D219EAF92000B1437 /* Build configuration list for PBXNativeTarget "VWallet" */ = {
+		40BF3E4D219EAF92000B1437 /* Build configuration list for PBXNativeTarget "ColdWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40BF3E4E219EAF92000B1437 /* Debug */,
