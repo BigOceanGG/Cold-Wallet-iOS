@@ -8,6 +8,7 @@
 "tip_init_alert_title" = "官方提示";
 "tip_init_alert_detail" = "为保证您的个人财产安全，请务必确保您的钱包APP来自TV官方网站t.top下载";
 "tip_init_alert_btn" = "知道了";
+"tip_title_update" = "发现新版本，是否立即更新";
 
 "settings_wallet_manager" = "钱包管理";
 "settings_backup" = "备份助记词";

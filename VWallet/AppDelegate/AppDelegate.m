@@ -19,6 +19,11 @@
 #import "PasswordInputModel.h"
 #import "WindowManager.h"
 #import "MonitorViewController.h"
+#import "AlertViewController.h"
+#import "Language.h"
+
+static NSString* const urlServer    = @"http://version.t.top/v1/appVsersion";
+static NSString* const urlDownload  = @"https://testflight.apple.com/join/asJKfv78";
 
 @interface AppDelegate ()
 
@@ -28,7 +33,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.    
+    // Override point for customization after application launch.
     [self enableAutoDismissKeyboard];
 
     [[DeviceState shareInstance] startBluetoothMonitor];
@@ -47,6 +52,8 @@
         _window.rootViewController = [VStoryboard.Generate instantiateInitialViewController];
     }
     
+    [self updateApp];
+    
     if ([AppState shareInstance].connectionCheckEnable) {
         [self checkConnection: self.window];
     }
@@ -54,6 +61,52 @@
     sleep(1.f);
     return YES;
 }
+
+- (NSDictionary *)jsonStringToDictionary:(NSString *)jsonStr{
+    if (jsonStr == nil){
+        return nil;
+    }
+    
+    NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
+    if (error && [dict[@"message"] isEqualToString:@"success"]){
+        return nil;
+    }
+    
+    return dict;
+}
+
+- (void) updateApp {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    int localVersion =  [[infoDictionary objectForKey:@"CFBundleVersion"] intValue];
+    
+    NSURL *appUrl = [NSURL URLWithString:[NSString stringWithFormat:urlServer]];
+    NSString *appMsg = [NSString stringWithContentsOfURL:appUrl encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary *appMsgDict = [self jsonStringToDictionary:appMsg];
+    int remoteVersion = 0;
+    if(appMsgDict){
+        remoteVersion =  [appMsgDict[@"data"][@"coldAppIosVersion"] intValue];
+    }
+    
+    if(localVersion < remoteVersion){
+        UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        alertWindow.rootViewController = [[UIViewController alloc] init];
+        alertWindow.windowLevel = UIWindowLevelAlert + 1;
+        [alertWindow makeKeyAndVisible];
+        AlertViewController *alertController = [[AlertViewController alloc] initWithTitle:VLocalize(@"") secondTitle:VLocalize(@"tip_title_update") contentView:^(UIStackView * _Nonnull view) {
+            
+        } cancelTitle:VLocalize(@"cancel") confirmTitle:VLocalize(@"confirm") cancel:^{
+            
+        } confirm:^{
+            NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:urlDownload]];
+            NSDictionary *options = @{UIApplicationOpenURLOptionUniversalLinksOnly : @YES};
+            [[UIApplication sharedApplication] openURL:url options:options completionHandler:nil];
+        }];
+        [alertWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+    }
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
