@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AE0362C8DB6E74BA1DE54B1 /* libPods-VWallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E2FDEC13EF8FF31A582D6E /* libPods-VWallet.a */; };
 		40045B3A21E63B7A0057045B /* Vsys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40045B3921E63B7A0057045B /* Vsys.framework */; };
 		40477A3821E5DA8D00EFF6E1 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40477A3721E5DA8D00EFF6E1 /* About.storyboard */; };
 		40611C3321BA5DA100D67CE7 /* WalletMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 40611B3521BA5DA000D67CE7 /* WalletMgr.m */; };
@@ -119,6 +118,7 @@
 		40BCC89D21C892A700400209 /* b64.c in Sources */ = {isa = PBXBuildFile; fileRef = 40BCC88F21C892A600400209 /* b64.c */; };
 		40BCC89E21C892A700400209 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 40BCC89021C892A600400209 /* sha256.c */; };
 		40BCC89F21C892A700400209 /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = 40BCC89121C892A600400209 /* crypto_scrypt-nosse.c */; };
+		530EFD2DD10F95E7BCF4AE75 /* libPods-ColdWallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C24EF9DA4445C12AB75EA1 /* libPods-ColdWallet.a */; };
 		DDA473EC22A3B3D2004726F9 /* Randomness.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA473E622A3B3D2004726F9 /* Randomness.m */; };
 		DDA473ED22A3B3D2004726F9 /* Ed25519.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA473E722A3B3D2004726F9 /* Ed25519.m */; };
 		DDA473EE22A3B3D2004726F9 /* Curve25519.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA473E822A3B3D2004726F9 /* Curve25519.m */; };
@@ -172,6 +172,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		066DDAC6F78114427FAC4DD6 /* Pods-ColdWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColdWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColdWallet/Pods-ColdWallet.release.xcconfig"; sourceTree = "<group>"; };
+		088F7A11DF48CB16BE4CF548 /* Pods-ColdWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColdWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColdWallet/Pods-ColdWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		40045B3921E63B7A0057045B /* Vsys.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Vsys.framework; sourceTree = "<group>"; };
 		40477A3721E5DA8D00EFF6E1 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = About.storyboard; path = VWallet/Presentation/About/About.storyboard; sourceTree = SOURCE_ROOT; };
 		404D41A221AD6FE100E80206 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 		5F126AF60D480F54113500DF /* libPods-VeeWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VeeWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E2FDEC13EF8FF31A582D6E /* libPods-VWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7756EDB95079BE788F11EA19 /* Pods-VWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VWallet/Pods-VWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		C7C24EF9DA4445C12AB75EA1 /* libPods-ColdWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColdWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA473E622A3B3D2004726F9 /* Randomness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Randomness.m; sourceTree = "<group>"; };
 		DDA473E722A3B3D2004726F9 /* Ed25519.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ed25519.m; sourceTree = "<group>"; };
 		DDA473E822A3B3D2004726F9 /* Curve25519.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Curve25519.m; sourceTree = "<group>"; };
@@ -457,7 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40045B3A21E63B7A0057045B /* Vsys.framework in Frameworks */,
-				0AE0362C8DB6E74BA1DE54B1 /* libPods-VWallet.a in Frameworks */,
+				530EFD2DD10F95E7BCF4AE75 /* libPods-ColdWallet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +472,7 @@
 			children = (
 				5F126AF60D480F54113500DF /* libPods-VeeWallet.a */,
 				64E2FDEC13EF8FF31A582D6E /* libPods-VWallet.a */,
+				C7C24EF9DA4445C12AB75EA1 /* libPods-ColdWallet.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1347,6 +1351,8 @@
 				E6BBE3D51D60ACBB9EEFDFA9 /* Pods-VeeWallet.release.xcconfig */,
 				7756EDB95079BE788F11EA19 /* Pods-VWallet.debug.xcconfig */,
 				44C8400F105584F7038EB733 /* Pods-VWallet.release.xcconfig */,
+				088F7A11DF48CB16BE4CF548 /* Pods-ColdWallet.debug.xcconfig */,
+				066DDAC6F78114427FAC4DD6 /* Pods-ColdWallet.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1606,7 +1612,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VWallet/Pods-VWallet-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ColdWallet/Pods-ColdWallet-frameworks.sh",
 				"${PODS_ROOT}/Reveal-SDK/RevealServer-13/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1617,7 +1623,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VWallet/Pods-VWallet-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColdWallet/Pods-ColdWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		79298A864DA79790590FB2D3 /* [CP] Check Pods Manifest.lock */ = {
@@ -1635,7 +1641,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VWallet-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ColdWallet-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1650,7 +1656,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VWallet/Pods-VWallet-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ColdWallet/Pods-ColdWallet-resources.sh",
 				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1661,7 +1667,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VWallet/Pods-VWallet-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColdWallet/Pods-ColdWallet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2004,7 +2010,7 @@
 		};
 		40BF3E4E219EAF92000B1437 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7756EDB95079BE788F11EA19 /* Pods-VWallet.debug.xcconfig */;
+			baseConfigurationReference = 088F7A11DF48CB16BE4CF548 /* Pods-ColdWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2031,7 +2037,7 @@
 		};
 		40BF3E4F219EAF92000B1437 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44C8400F105584F7038EB733 /* Pods-VWallet.release.xcconfig */;
+			baseConfigurationReference = 066DDAC6F78114427FAC4DD6 /* Pods-ColdWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
