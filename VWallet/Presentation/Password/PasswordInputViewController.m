@@ -21,6 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *pageTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pageSubtitleLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *vsysLogoTop;
 
 @property (weak, nonatomic) IBOutlet UITextField *pwdTextField;
 @property (weak, nonatomic) IBOutlet UIButton *enterBtn;
@@ -58,6 +59,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHide:) name:UIKeyboardWillHideNotification object:nil];
     [self.pwdTextField becomeFirstResponder];
 }
 
@@ -105,6 +108,33 @@
             [self presentViewController:pwdErrorAlert animated:YES completion:nil];
         }
     }
+}
+
+#pragma mark - keyboard
+- (void)keyboardShow:(NSNotification *)notification {
+    CGFloat keyboardMinY = CGRectGetMinY([notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue]);
+    CGFloat inputViewMaxY = CGRectGetMaxY([self.inputView convertRect:self.inputView.bounds toView:UIApplication.sharedApplication.keyWindow]);
+    // 100: distance between logo and top when keyboard hidden
+    // 52: max distance between logo and top when keyboard show
+    CGFloat offset = MAX((100 - 52), (inputViewMaxY + 20 - keyboardMinY));
+    
+    NSTimeInterval duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    UIViewKeyframeAnimationOptions option = [notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] intValue];
+    __weak typeof(self) weakSelf = self;
+    [UIView animateKeyframesWithDuration:duration delay:0 options:option animations:^{
+        weakSelf.vsysLogoTop.constant = 100 - offset;
+        [weakSelf.view layoutIfNeeded];
+    } completion:nil];
+}
+
+- (void)keyboardHide:(NSNotification *)notification {
+    NSTimeInterval duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    UIViewKeyframeAnimationOptions option = [notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] intValue];
+    __weak typeof(self) weakSelf = self;
+    [UIView animateKeyframesWithDuration:duration delay:0 options:option animations:^{
+        weakSelf.vsysLogoTop.constant = 100;
+        [weakSelf.view layoutIfNeeded];
+    } completion:nil];
 }
 
 @end

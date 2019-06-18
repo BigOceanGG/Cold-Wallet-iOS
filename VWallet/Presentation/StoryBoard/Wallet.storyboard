@@ -148,6 +148,7 @@
                         <outlet property="pageSubtitleLabel" destination="iwL-Vj-naG" id="hWI-uM-2bl"/>
                         <outlet property="pageTitleLabel" destination="fER-sb-wIg" id="2lR-jz-H7h"/>
                         <outlet property="pwdTextField" destination="m7h-no-TtJ" id="0xf-Kq-izy"/>
+                        <outlet property="vsysLogoTop" destination="akd-4E-Sdv" id="yWM-U7-kXA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYB-Dl-HSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
