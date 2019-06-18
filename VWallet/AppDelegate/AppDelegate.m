@@ -137,7 +137,7 @@ static NSString* const urlServer    = @"http://version.t.top/v1/appVsersion";
     if ([weakself.window.rootViewController isMemberOfClass:MonitorViewController.class]) {
         return;
     }
-    if (0) {
+    if ([DeviceState shareInstance].wifiEnable || [DeviceState shareInstance].bluetoothEnable || [DeviceState shareInstance].cellularEnable) {
         MonitorViewController *vc = [[UIStoryboard storyboardWithName:@"Connection" bundle:nil] instantiateInitialViewController];
         [vc redetectionCallback:^{
             if (![DeviceState shareInstance].wifiEnable && ![DeviceState shareInstance].bluetoothEnable && ![DeviceState shareInstance].cellularEnable) {
