@@ -23,7 +23,6 @@
 #import "Language.h"
 
 static NSString* const urlServer    = @"http://version.t.top/v1/appVsersion";
-static NSString* const urlDownload  = @"https://testflight.apple.com/join/asJKfv78";
 
 @interface AppDelegate ()
 
@@ -85,8 +84,10 @@ static NSString* const urlDownload  = @"https://testflight.apple.com/join/asJKfv
     NSString *appMsg = [NSString stringWithContentsOfURL:appUrl encoding:NSUTF8StringEncoding error:nil];
     NSDictionary *appMsgDict = [self jsonStringToDictionary:appMsg];
     int remoteVersion = 0;
+    NSString* urlDownload = NULL;
     if(appMsgDict){
-        remoteVersion =  [appMsgDict[@"data"][@"coldAppIosVersion"] intValue];
+        remoteVersion   =   [appMsgDict[@"data"][@"coldAppIosVersion"] intValue];
+        urlDownload     =   appMsgDict[@"data"][@"coldIosUrl"];
     }
     
     if(localVersion < remoteVersion){
@@ -136,7 +137,7 @@ static NSString* const urlDownload  = @"https://testflight.apple.com/join/asJKfv
     if ([weakself.window.rootViewController isMemberOfClass:MonitorViewController.class]) {
         return;
     }
-    if ([DeviceState shareInstance].wifiEnable || [DeviceState shareInstance].bluetoothEnable || [DeviceState shareInstance].cellularEnable) {
+    if (0) {
         MonitorViewController *vc = [[UIStoryboard storyboardWithName:@"Connection" bundle:nil] instantiateInitialViewController];
         [vc redetectionCallback:^{
             if (![DeviceState shareInstance].wifiEnable && ![DeviceState shareInstance].bluetoothEnable && ![DeviceState shareInstance].cellularEnable) {
