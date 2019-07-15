@@ -99,14 +99,14 @@ static NSString *const CellIdentifier = @"TradeInfoTableViewCell";
             if (amount > 0) {
                 NSString *amountStr = [NSString stringWithDecimal:(amount * 1.0 / VsysVSYS) maxFractionDigits:8 minFractionDigits:2 trimTrailing:YES];
                 [showData addObject:@{@"title":VLocalize(@"trade_confirm_amount"),
-                                      @"value":[NSString stringWithFormat:@"%@ VCoin", amountStr]}];
+                                      @"value":[NSString stringWithFormat:@"%@ TV", amountStr]}];
             }
             
             ino64_t fee = [showInfoDict[@"fee"] integerValue];
             if (fee > 0) {
                 NSString *feeStr = [NSString stringWithDecimal:(fee * 1.0 / VsysVSYS) maxFractionDigits:8 minFractionDigits:2 trimTrailing:YES];
                 [showData addObject:@{@"title":VLocalize(@"trade_confirm_poundage"),
-                                      @"value":[NSString stringWithFormat:@"%@ VCoin", feeStr]}];
+                                      @"value":[NSString stringWithFormat:@"%@ TV", feeStr]}];
                 self.vTransaction.fee = fee;
                 self.vTransaction.feeScale = [showInfoDict[@"feeScale"] integerValue];
             }
